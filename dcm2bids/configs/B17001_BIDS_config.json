@@ -1,0 +1,215 @@
+{
+   "descriptions": [
+      {
+         "dataType": "anat",
+         "modalityLabel": "T1w",
+         "criteria": {
+            "SidecarFilename": "002*"
+         }
+      },
+      {
+         "dataType": "func",
+         "modalityLabel": "sbref",
+         "customLabels": "task-rest_run-01",
+         "criteria": {
+            "SidecarFilename": "004*"
+         },
+         "sidecarChanges": {
+            "TaskName": "rest"
+         }
+      },
+      {
+         "dataType": "func",
+         "modalityLabel": "bold",
+         "customLabels": "task-rest_run-01",
+         "criteria": {
+            "SidecarFilename": "006*"
+         },
+         "sidecarChanges": {
+            "TaskName": "rest"
+         }
+      },
+      {
+         "dataType": "fmap",
+         "modalityLabel": "epi",
+         "customLabels": "dir-AP",
+         "IntendedFor": [
+            2,
+            6,
+            8
+         ],
+         "criteria": {
+            "SidecarFilename": "009*"
+         }
+      },
+      {
+         "dataType": "fmap",
+         "modalityLabel": "epi",
+         "customLabels": "dir-PA",
+         "IntendedFor": [
+            2,
+            6,
+            8
+         ],
+         "criteria": {
+            "SidecarFilename": "010*"
+         }
+      },
+      {
+         "dataType": "func",
+         "modalityLabel": "sbref",
+         "customLabels": "task-realestate_run-01",
+         "criteria": {
+            "SidecarFilename": "012*"
+         },
+         "sidecarChanges": {
+            "TaskName": "realestate"
+         }
+      },
+      {
+         "dataType": "func",
+         "modalityLabel": "bold",
+         "customLabels": "task-realestate_run-01",
+         "criteria": {
+            "SidecarFilename": "014*"
+         },
+         "sidecarChanges": {
+            "TaskName": "realestate"
+         }
+      },
+      {
+         "dataType": "func",
+         "modalityLabel": "sbref",
+         "customLabels": "task-realestate_run-02",
+         "criteria": {
+            "SidecarFilename": "017*"
+         },
+         "sidecarChanges": {
+            "TaskName": "realestate"
+         }
+      },
+      {
+         "dataType": "func",
+         "modalityLabel": "bold",
+         "customLabels": "task-realestate_run-02",
+         "criteria": {
+            "SidecarFilename": "019*"
+         },
+         "sidecarChanges": {
+            "TaskName": "realestate"
+         }
+      },
+      {
+         "dataType": "fmap",
+         "modalityLabel": "epi",
+         "customLabels": "dir-AP",
+         "IntendedFor": [
+            12
+         ],
+         "criteria": {
+            "SidecarFilename": "020*"
+         }
+      },
+      {
+         "dataType": "fmap",
+         "modalityLabel": "epi",
+         "customLabels": "dir-PA",
+         "IntendedFor": [
+            12
+         ],
+         "criteria": {
+            "SidecarFilename": "021*"
+         }
+      },
+      {
+         "dataType": "func",
+         "modalityLabel": "sbref",
+         "customLabels": "task-realestate_run-03",
+         "criteria": {
+            "SidecarFilename": "023*"
+         },
+         "sidecarChanges": {
+            "TaskName": "realestate"
+         }
+      },
+      {
+         "dataType": "func",
+         "modalityLabel": "bold",
+         "customLabels": "task-realestate_run-03",
+         "criteria": {
+            "SidecarFilename": "025*"
+         },
+         "sidecarChanges": {
+            "TaskName": "realestate"
+         }
+      },
+      {
+         "dataType": "fmap",
+         "modalityLabel": "epi",
+         "customLabels": "dir-AP",
+         "IntendedFor": [
+            16,
+            18
+         ],
+         "criteria": {
+            "SidecarFilename": "026*"
+         }
+      },
+      {
+         "dataType": "fmap",
+         "modalityLabel": "epi",
+         "customLabels": "dir-PA",
+         "IntendedFor": [
+            16,
+            18
+         ],
+         "criteria": {
+            "SidecarFilename": "027*"
+         }
+      },
+      {
+         "dataType": "func",
+         "modalityLabel": "sbref",
+         "customLabels": "task-realestate_run-04",
+         "criteria": {
+            "SidecarFilename": "029*"
+         },
+         "sidecarChanges": {
+            "TaskName": "realestate"
+         }
+      },
+      {
+         "dataType": "func",
+         "modalityLabel": "bold",
+         "customLabels": "task-realestate_run-04",
+         "criteria": {
+            "SidecarFilename": "031*"
+         },
+         "sidecarChanges": {
+            "TaskName": "realestate"
+         }
+      },
+      {
+         "dataType": "func",
+         "modalityLabel": "sbref",
+         "customLabels": "task-rest_run-02",
+         "criteria": {
+            "SidecarFilename": "033*"
+         },
+         "sidecarChanges": {
+            "TaskName": "rest"
+         }
+      },
+      {
+         "dataType": "func",
+         "modalityLabel": "bold",
+         "customLabels": "task-rest_run-02",
+         "criteria": {
+            "SidecarFilename": "035*"
+         },
+         "sidecarChanges": {
+            "TaskName": "rest"
+         }
+      }
+   ]
+}

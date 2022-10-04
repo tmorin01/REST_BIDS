@@ -1,0 +1,63 @@
+ORIGINAL
+001	localizer					Localizers_1
+002	anat-T1w					t1_mprage_32ch_2
+003	func_task-rest_SBRef		mb_bold_mb4_2p6mmiso_SAG_pre_SBRef_3
+004	func_task-rest_SBRef		mb_bold_mb4_2p6mmiso_SAG_pre_SBRef_4 (Pre-scan NORM)
+005	func_task-rest 				mb_bold_mb4_2p6mmiso_SAG_pre_5
+006 func_task-rest 				mb_bold_mb4_2p6mmiso_SAG_pre_6 (Pre-scan NORM)
+007 fmap-magnitude				gre_field_mapping_neuro_VB17_7
+008 fmap_phase					gre_field_mapping_neuro_VB17_8
+009 fmap-SE-AP					cmrr_mbep2d_se_AP_run1_9
+010 fmap-SE-PA					cmrr_mbep2d_se_PA_run1_10
+011 func_task-realestate_SBRef	mb_bold_mb4_15mm_PA_PSN_run1_SBRef_11
+012 func_task-realestate_SBRef	mb_bold_mb4_15mm_PA_PSN_run1_SBRef_12 (Pre-scan NORM)
+013 func_task-realestate 		mb_bold_mb4_15mm_PA_PSN_run1_13
+014 func_task-realestate 		mb_bold_mb4_15mm_PA_PSN_run1_14 (Pre-scan NORM)
+015 fmap-SE-AP					cmrr_mbep2d_se_AP_run1_15
+016 fmap-SE-PA					cmrr_mbep2d_se_PA_run1_16
+017 func_task-realestate_SBRef	mb_bold_mb4_15mm_PA_PSN_run2_SBRef_17
+018 func_task-realestate_SBRef	mb_bold_mb4_15mm_PA_PSN_run2_SBRef_18 (Pre-scan NORM)
+019 func_task-realestate 		mb_bold_mb4_15mm_PA_PSN_run2_19
+020 func_task-realestate 		mb_bold_mb4_15mm_PA_PSN_run2_20 (Pre-scan NORM)
+021 fmap-SE-AP					cmrr_mbep2d_se_AP_run1_21
+022 fmap-SE-PA					cmrr_mbep2d_se_PA_run1_22
+023 func_task-realestate_SBRef	mb_bold_mb4_15mm_PA_PSN_run3_SBRef_23
+024 func_task-realestate_SBRef	mb_bold_mb4_15mm_PA_PSN_run3_SBRef_24 (Pre-scan NORM)
+025 func_task-realestate 		mb_bold_mb4_15mm_PA_PSN_run3_25
+026 func_task-realestate 		mb_bold_mb4_15mm_PA_PSN_run3_26 (Pre-scan NORM)
+027 fmap-SE-AP					cmrr_mbep2d_se_AP_run1_27
+028 fmap-SE-PA					cmrr_mbep2d_se_PA_run1_28 
+029 func_task-realestate_SBRef	mb_bold_mb4_15mm_PA_PSN_run4_SBRef_29
+030 func_task-realestate_SBRef	mb_bold_mb4_15mm_PA_PSN_run4_SBRef_30 (Pre-scan NORM)
+031 func_task-realestate 		mb_bold_mb4_15mm_PA_PSN_run4_31
+032 func_task-realestate 		mb_bold_mb4_15mm_PA_PSN_run4_32 (Pre-scan NORM)
+033 func_task-rest_SBRef		mb_bold_mb4_2p6mmiso_SAG_post_SBRef_33
+034 func_task-rest_SBRef		mb_bold_mb4_2p6mmiso_SAG_post_SBRef_34 (Pre-scan NORM)
+035 func_task-rest 				mb_bold_mb4_2p6mmiso_SAG_post_35
+036 func_task-rest 				mb_bold_mb4_2p6mmiso_SAG_post_36 (Pre-scan NORM)
+
+BIDS_REVISED
+0 anat-T1w
+1 func_task-rest_SBRef
+2 func_task-rest
+3 fmap_magnitude1
+4 fmap_magnitude2
+5 fmap_phase
+6 fmap-SE-AP
+7 fmap-SE-PA
+8 func_task-realestate_SBRef
+9 func_task-realestate
+10 fmap-SE-AP
+11 fmap-SE-PA
+12 func_task_realestate_SBRef
+13 func_task_realestate
+14 fmap-SE-AP
+15 fmap-SE-PA
+16 func_task_realestate_SBRef
+17 func_task_realestate
+18 fmap-SE-AP
+19 fmap-SE-PA
+20 func_task_realestate_SBRef
+21 func_task_realestate
+22 func_task-rest_SBRef
+23 func_task-rest
