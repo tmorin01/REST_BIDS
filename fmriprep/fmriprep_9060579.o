@@ -1,0 +1,967 @@
+Running fmriprep...
+/usr/local/miniconda/lib/python3.7/site-packages/bids/layout/validation.py:46: UserWarning: The ability to pass arguments to BIDSLayout that control indexing is likely to be removed in future; possibly as early as PyBIDS 0.14. This includes the `config_filename`, `ignore`, `force_index`, and `index_metadata` arguments. The recommended usage pattern is to initialize a new BIDSLayoutIndexer with these arguments, and pass it to the BIDSLayout via the `indexer` argument.
+  warnings.warn("The ability to pass arguments to BIDSLayout that control "
+You are using fMRIPrep-20.2.0, and a newer version of fMRIPrep is available: 22.0.2.
+Please check out our documentation about how and when to upgrade:
+https://fmriprep.readthedocs.io/en/latest/faq.html#upgrading
+WARNING: Version 20.2.0 of fMRIPrep (current) has been FLAGGED
+(reason: Functional outputs in standard space can be wrong depending on the original data's orientation headers - see https://github.com/nipreps/fmriprep/issues/2307).
+That means some severe flaw was found in it and we strongly
+discourage its usage.
+221006-15:47:02,418 nipype.workflow IMPORTANT:
+	 
+    Running fMRIPREP version 20.2.0:
+      * BIDS dataset path: /data.
+      * Participant list: ['B07227'].
+      * Run identifier: 20221006-154626_59504573-b520-4013-b766-11e3cc277846.
+      * Output spaces: MNI152NLin2009cAsym:res-2 fsaverage:den-164k.
+      * Pre-run FreeSurfer's SUBJECTS_DIR: /data/derivatives/freesurfer.
+221006-15:47:05,276 nipype.workflow INFO:
+	 Using single-band reference file(s) sub-B07227_ses-01_task-realestate_run-01_sbref.nii.gz.
+221006-15:47:08,993 nipype.workflow IMPORTANT:
+	 Slice-timing correction will be included.
+221006-15:47:09,701 nipype.workflow INFO:
+	 Using single-band reference file(s) sub-B07227_ses-01_task-realestate_run-02_sbref.nii.gz.
+221006-15:47:12,529 nipype.workflow IMPORTANT:
+	 Slice-timing correction will be included.
+221006-15:47:13,170 nipype.workflow INFO:
+	 Using single-band reference file(s) sub-B07227_ses-01_task-realestate_run-03_sbref.nii.gz.
+221006-15:47:15,998 nipype.workflow IMPORTANT:
+	 Slice-timing correction will be included.
+221006-15:47:16,642 nipype.workflow INFO:
+	 Using single-band reference file(s) sub-B07227_ses-01_task-realestate_run-04_sbref.nii.gz.
+221006-15:47:19,522 nipype.workflow IMPORTANT:
+	 Slice-timing correction will be included.
+221006-15:47:20,395 nipype.workflow INFO:
+	 Using single-band reference file(s) sub-B07227_ses-01_task-rest_run-01_sbref.nii.gz.
+221006-15:47:21,458 nipype.workflow IMPORTANT:
+	 Slice-timing correction will be included.
+221006-15:47:21,664 nipype.workflow INFO:
+	 Using single-band reference file(s) sub-B07227_ses-01_task-rest_run-02_sbref.nii.gz.
+221006-15:47:22,743 nipype.workflow IMPORTANT:
+	 Slice-timing correction will be included.
+221006-15:47:35,642 nipype.workflow INFO:
+	 fMRIPrep workflow graph with 1765 nodes built successfully.
+221006-15:48:11,469 nipype.workflow IMPORTANT:
+	 fMRIPrep started!
+221006-15:49:03,637 nipype.workflow WARNING:
+	 Some nodes exceed the total amount of memory available (15.00GB).
+221006-15:49:22,390 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.func_derivatives_wf.raw_sources" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/func_derivatives_wf/raw_sources".
+221006-15:49:22,401 nipype.workflow INFO:
+	 [Node] Running "raw_sources" ("nipype.interfaces.utility.wrappers.Function")
+221006-15:49:22,415 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.func_derivatives_wf.raw_sources".
+221006-15:49:22,417 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.split" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/split".
+221006-15:49:22,429 nipype.workflow INFO:
+	 [Node] Running "split" ("nipype.interfaces.utility.wrappers.Function")
+221006-15:49:22,522 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_02_wf.func_derivatives_wf.raw_sources" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_02_wf/func_derivatives_wf/raw_sources".
+221006-15:49:22,533 nipype.workflow INFO:
+	 [Node] Running "raw_sources" ("nipype.interfaces.utility.wrappers.Function")
+221006-15:49:22,546 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_02_wf.func_derivatives_wf.raw_sources".
+221006-15:49:22,547 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_02_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.split" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_02_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/split".
+221006-15:49:22,558 nipype.workflow INFO:
+	 [Node] Running "split" ("nipype.interfaces.utility.wrappers.Function")
+221006-15:49:22,652 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_03_wf.func_derivatives_wf.raw_sources" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_03_wf/func_derivatives_wf/raw_sources".
+221006-15:49:22,664 nipype.workflow INFO:
+	 [Node] Running "raw_sources" ("nipype.interfaces.utility.wrappers.Function")
+221006-15:49:22,676 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_03_wf.func_derivatives_wf.raw_sources".
+221006-15:49:22,677 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_03_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.split" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_03_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/split".
+221006-15:49:22,689 nipype.workflow INFO:
+	 [Node] Running "split" ("nipype.interfaces.utility.wrappers.Function")
+221006-15:49:23,190 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.split".
+221006-15:49:23,239 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_02_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.split".
+221006-15:49:23,488 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_03_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.split".
+221006-15:49:25,294 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_04_wf.func_derivatives_wf.raw_sources" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_04_wf/func_derivatives_wf/raw_sources".
+221006-15:49:25,303 nipype.workflow INFO:
+	 [Node] Running "raw_sources" ("nipype.interfaces.utility.wrappers.Function")
+221006-15:49:25,312 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_04_wf.func_derivatives_wf.raw_sources".
+221006-15:49:27,825 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_02_wf.initial_boldref_wf.val_sbref" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_02_wf/initial_boldref_wf/val_sbref".
+221006-15:49:27,836 nipype.workflow INFO:
+	 [Node] Setting-up "_val_sbref0" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_02_wf/initial_boldref_wf/val_sbref/mapflow/_val_sbref0".
+221006-15:49:27,844 nipype.workflow INFO:
+	 [Node] Running "_val_sbref0" ("niworkflows.interfaces.images.ValidateImage")
+221006-15:49:27,858 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.initial_boldref_wf.val_bold" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/initial_boldref_wf/val_bold".
+221006-15:49:27,871 nipype.workflow INFO:
+	 [Node] Setting-up "_val_bold0" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/initial_boldref_wf/val_bold/mapflow/_val_bold0".
+221006-15:49:27,880 nipype.workflow INFO:
+	 [Node] Running "_val_bold0" ("niworkflows.interfaces.images.ValidateImage")
+221006-15:49:27,937 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_02_wf.initial_boldref_wf.val_bold" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_02_wf/initial_boldref_wf/val_bold".
+221006-15:49:27,941 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.initial_boldref_wf.val_sbref" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/initial_boldref_wf/val_sbref".
+221006-15:49:27,949 nipype.workflow INFO:
+	 [Node] Setting-up "_val_bold0" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_02_wf/initial_boldref_wf/val_bold/mapflow/_val_bold0".
+221006-15:49:27,953 nipype.workflow INFO:
+	 [Node] Setting-up "_val_sbref0" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/initial_boldref_wf/val_sbref/mapflow/_val_sbref0".
+221006-15:49:27,956 nipype.workflow INFO:
+	 [Node] Running "_val_bold0" ("niworkflows.interfaces.images.ValidateImage")
+221006-15:49:27,961 nipype.workflow INFO:
+	 [Node] Running "_val_sbref0" ("niworkflows.interfaces.images.ValidateImage")
+221006-15:49:28,399 nipype.workflow INFO:
+	 [Node] Finished "_val_sbref0".
+221006-15:49:28,403 nipype.workflow INFO:
+	 [Node] Finished "_val_sbref0".
+221006-15:49:28,404 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.initial_boldref_wf.val_sbref".
+221006-15:49:28,409 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_02_wf.initial_boldref_wf.val_sbref".
+221006-15:49:28,603 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_03_wf.initial_boldref_wf.val_bold" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_03_wf/initial_boldref_wf/val_bold".
+221006-15:49:28,617 nipype.workflow INFO:
+	 [Node] Setting-up "_val_bold0" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_03_wf/initial_boldref_wf/val_bold/mapflow/_val_bold0".
+221006-15:49:28,625 nipype.workflow INFO:
+	 [Node] Running "_val_bold0" ("niworkflows.interfaces.images.ValidateImage")
+221006-15:49:29,151 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_03_wf.initial_boldref_wf.val_sbref" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_03_wf/initial_boldref_wf/val_sbref".
+221006-15:49:29,168 nipype.workflow INFO:
+	 [Node] Setting-up "_val_sbref0" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_03_wf/initial_boldref_wf/val_sbref/mapflow/_val_sbref0".
+221006-15:49:29,177 nipype.workflow INFO:
+	 [Node] Running "_val_sbref0" ("niworkflows.interfaces.images.ValidateImage")
+221006-15:49:29,503 nipype.workflow INFO:
+	 [Node] Finished "_val_sbref0".
+221006-15:49:29,510 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_03_wf.initial_boldref_wf.val_sbref".
+221006-15:49:29,954 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_04_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.split" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_04_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/split".
+221006-15:49:29,958 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_04_wf.initial_boldref_wf.val_sbref" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_04_wf/initial_boldref_wf/val_sbref".
+221006-15:49:29,970 nipype.workflow INFO:
+	 [Node] Running "split" ("nipype.interfaces.utility.wrappers.Function")
+221006-15:49:29,973 nipype.workflow INFO:
+	 [Node] Setting-up "_val_sbref0" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_04_wf/initial_boldref_wf/val_sbref/mapflow/_val_sbref0".
+221006-15:49:29,982 nipype.workflow INFO:
+	 [Node] Running "_val_sbref0" ("niworkflows.interfaces.images.ValidateImage")
+221006-15:49:31,490 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.merge_ma" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/merge_ma".
+221006-15:49:31,533 nipype.workflow INFO:
+	 [Node] Running "merge_ma" ("niworkflows.interfaces.freesurfer.StructuralReference"), a CommandLine Interface with command:
+echo Only one time point!
+221006-15:49:31,652 nipype.workflow INFO:
+	 [Node] Finished "_val_sbref0".
+221006-15:49:31,663 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_04_wf.initial_boldref_wf.val_sbref".
+221006-15:49:31,672 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_04_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.split".
+221006-15:49:31,801 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_04_wf.initial_boldref_wf.val_bold" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_04_wf/initial_boldref_wf/val_bold".
+221006-15:49:31,823 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_02_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.merge_ma" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_02_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/merge_ma".
+221006-15:49:31,843 nipype.workflow INFO:
+	 [Node] Setting-up "_val_bold0" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_04_wf/initial_boldref_wf/val_bold/mapflow/_val_bold0".
+221006-15:49:31,852 nipype.workflow INFO:
+	 [Node] Running "_val_bold0" ("niworkflows.interfaces.images.ValidateImage")
+221006-15:49:31,865 nipype.workflow INFO:
+	 [Node] Running "merge_ma" ("niworkflows.interfaces.freesurfer.StructuralReference"), a CommandLine Interface with command:
+echo Only one time point!
+221006-15:49:31,873 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.merge_ma".
+221006-15:49:32,112 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_02_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.merge_ma".
+221006-15:49:32,506 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.merge_op" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/merge_op".
+221006-15:49:32,549 nipype.workflow INFO:
+	 [Node] Running "merge_op" ("niworkflows.interfaces.freesurfer.StructuralReference"), a CommandLine Interface with command:
+echo Only one time point!
+221006-15:49:32,875 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_02_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.merge_op" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_02_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/merge_op".
+221006-15:49:32,921 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.merge_op".
+221006-15:49:32,922 nipype.workflow INFO:
+	 [Node] Running "merge_op" ("niworkflows.interfaces.freesurfer.StructuralReference"), a CommandLine Interface with command:
+echo Only one time point!
+221006-15:49:33,3 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_03_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.merge_ma" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_03_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/merge_ma".
+221006-15:49:33,59 nipype.workflow INFO:
+	 [Node] Running "merge_ma" ("niworkflows.interfaces.freesurfer.StructuralReference"), a CommandLine Interface with command:
+echo Only one time point!
+221006-15:49:33,215 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_02_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.merge_op".
+221006-15:49:33,466 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_03_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.merge_ma".
+221006-15:49:33,780 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_03_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.merge_op" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_03_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/merge_op".
+221006-15:49:33,804 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_01_wf.func_derivatives_wf.raw_sources" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_rest_run_01_wf/func_derivatives_wf/raw_sources".
+221006-15:49:33,809 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_02_wf.func_derivatives_wf.raw_sources" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_rest_run_02_wf/func_derivatives_wf/raw_sources".
+221006-15:49:33,838 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_01_wf.initial_boldref_wf.val_sbref" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_rest_run_01_wf/initial_boldref_wf/val_sbref".
+221006-15:49:33,843 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_01_wf.initial_boldref_wf.val_bold" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_rest_run_01_wf/initial_boldref_wf/val_bold".
+221006-15:49:33,909 nipype.workflow INFO:
+	 [Node] Setting-up "_val_sbref0" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_rest_run_01_wf/initial_boldref_wf/val_sbref/mapflow/_val_sbref0".
+221006-15:49:33,911 nipype.workflow INFO:
+	 [Node] Running "raw_sources" ("nipype.interfaces.utility.wrappers.Function")
+221006-15:49:33,911 nipype.workflow INFO:
+	 [Node] Running "raw_sources" ("nipype.interfaces.utility.wrappers.Function")
+221006-15:49:33,913 nipype.workflow INFO:
+	 [Node] Setting-up "_val_bold0" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_rest_run_01_wf/initial_boldref_wf/val_bold/mapflow/_val_bold0".
+221006-15:49:33,930 nipype.workflow INFO:
+	 [Node] Running "merge_op" ("niworkflows.interfaces.freesurfer.StructuralReference"), a CommandLine Interface with command:
+echo Only one time point!
+221006-15:49:33,933 nipype.workflow INFO:
+	 [Node] Running "_val_sbref0" ("niworkflows.interfaces.images.ValidateImage")
+221006-15:49:33,937 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_01_wf.func_derivatives_wf.raw_sources".
+221006-15:49:33,946 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_02_wf.func_derivatives_wf.raw_sources".
+221006-15:49:33,949 nipype.workflow INFO:
+	 [Node] Running "_val_bold0" ("niworkflows.interfaces.images.ValidateImage")
+221006-15:49:33,990 nipype.workflow INFO:
+	 [Node] Finished "_val_bold0".
+221006-15:49:33,996 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_01_wf.initial_boldref_wf.val_bold".
+221006-15:49:34,117 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_03_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.merge_op".
+221006-15:49:34,175 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_04_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.merge_ma" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_04_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/merge_ma".
+221006-15:49:34,216 nipype.workflow INFO:
+	 [Node] Running "merge_ma" ("niworkflows.interfaces.freesurfer.StructuralReference"), a CommandLine Interface with command:
+echo Only one time point!
+221006-15:49:34,219 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_04_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.merge_op" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_04_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/merge_op".
+221006-15:49:34,260 nipype.workflow INFO:
+	 [Node] Running "merge_op" ("niworkflows.interfaces.freesurfer.StructuralReference"), a CommandLine Interface with command:
+echo Only one time point!
+221006-15:49:34,484 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_04_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.merge_ma".
+221006-15:49:34,561 nipype.workflow INFO:
+	 [Node] Finished "_val_sbref0".
+221006-15:49:34,570 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_01_wf.initial_boldref_wf.val_sbref".
+221006-15:49:34,593 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_04_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.merge_op".
+221006-15:49:35,772 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_ma_wf.init_aff" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_ma_wf/init_aff".
+221006-15:49:35,808 nipype.workflow INFO:
+	 [Node] Running "init_aff" ("nipype.interfaces.ants.utils.AI"), a CommandLine Interface with command:
+antsAI -c [10,1e-06,10] -d 3 -x /templateflow/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-02_desc-brain_mask.nii.gz -m Mattes[/templateflow/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-02_desc-fMRIPrep_boldref.nii.gz,/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/split/dir-j_tstep-001_pe-000.nii.gz,32,Regular,0.2] -o initialization.mat -p 0 -s [20,0.12] -g [40.0,0x40x40] -t Affine[0.1] -v 1
+221006-15:50:04,849 nipype.workflow INFO:
+	 [Node] Finished "_val_bold0".
+221006-15:50:04,856 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_02_wf.initial_boldref_wf.val_bold".
+221006-15:50:04,902 nipype.workflow INFO:
+	 [Node] Finished "_val_bold0".
+221006-15:50:04,902 nipype.workflow INFO:
+	 [Node] Finished "_val_bold0".
+221006-15:50:04,908 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_04_wf.initial_boldref_wf.val_bold".
+221006-15:50:04,909 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_03_wf.initial_boldref_wf.val_bold".
+221006-15:50:04,909 nipype.workflow INFO:
+	 [Node] Finished "_val_bold0".
+221006-15:50:04,918 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.initial_boldref_wf.val_bold".
+221006-15:50:06,319 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.initial_boldref_wf.gen_ref" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/initial_boldref_wf/gen_ref".
+221006-15:50:06,387 nipype.workflow INFO:
+	 [Node] Running "gen_ref" ("niworkflows.interfaces.registration.EstimateReferenceImage")
+221006-15:50:06,850 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.initial_boldref_wf.gen_ref".
+221006-15:50:07,57 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_02_wf.initial_boldref_wf.gen_ref" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_02_wf/initial_boldref_wf/gen_ref".
+221006-15:50:07,133 nipype.workflow INFO:
+	 [Node] Running "gen_ref" ("niworkflows.interfaces.registration.EstimateReferenceImage")
+221006-15:50:07,481 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_02_wf.initial_boldref_wf.gen_ref".
+221006-15:50:07,765 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_03_wf.initial_boldref_wf.gen_ref" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_03_wf/initial_boldref_wf/gen_ref".
+221006-15:50:07,795 nipype.workflow INFO:
+	 [Node] Running "gen_ref" ("niworkflows.interfaces.registration.EstimateReferenceImage")
+221006-15:50:08,103 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_03_wf.initial_boldref_wf.gen_ref".
+221006-15:50:08,510 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_04_wf.initial_boldref_wf.gen_ref" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_04_wf/initial_boldref_wf/gen_ref".
+221006-15:50:08,559 nipype.workflow INFO:
+	 [Node] Running "gen_ref" ("niworkflows.interfaces.registration.EstimateReferenceImage")
+221006-15:50:08,870 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_04_wf.initial_boldref_wf.gen_ref".
+221006-15:50:09,275 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.bold_hmc_wf.mcflirt" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/bold_hmc_wf/mcflirt".
+221006-15:50:09,300 nipype.workflow INFO:
+	 [Node] Running "mcflirt" ("nipype.interfaces.fsl.preprocess.MCFLIRT"), a CommandLine Interface with command:
+mcflirt -in /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/initial_boldref_wf/val_bold/mapflow/_val_bold0/sub-B07227_ses-01_task-realestate_run-01_bold_valid.nii.gz -out /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/bold_hmc_wf/mcflirt/sub-B07227_ses-01_task-realestate_run-01_bold_valid_mcf.nii.gz -reffile /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/initial_boldref_wf/gen_ref/ref_sbref.nii.gz -mats -plots -rmsabs -rmsrel
+221006-15:50:09,971 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_02_wf.bold_hmc_wf.mcflirt" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_02_wf/bold_hmc_wf/mcflirt".
+221006-15:50:09,992 nipype.workflow INFO:
+	 [Node] Running "mcflirt" ("nipype.interfaces.fsl.preprocess.MCFLIRT"), a CommandLine Interface with command:
+mcflirt -in /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_02_wf/initial_boldref_wf/val_bold/mapflow/_val_bold0/sub-B07227_ses-01_task-realestate_run-02_bold_valid.nii.gz -out /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_02_wf/bold_hmc_wf/mcflirt/sub-B07227_ses-01_task-realestate_run-02_bold_valid_mcf.nii.gz -reffile /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_02_wf/initial_boldref_wf/gen_ref/ref_sbref.nii.gz -mats -plots -rmsabs -rmsrel
+221006-15:50:10,749 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_03_wf.bold_hmc_wf.mcflirt" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_03_wf/bold_hmc_wf/mcflirt".
+221006-15:50:10,778 nipype.workflow INFO:
+	 [Node] Running "mcflirt" ("nipype.interfaces.fsl.preprocess.MCFLIRT"), a CommandLine Interface with command:
+mcflirt -in /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_03_wf/initial_boldref_wf/val_bold/mapflow/_val_bold0/sub-B07227_ses-01_task-realestate_run-03_bold_valid.nii.gz -out /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_03_wf/bold_hmc_wf/mcflirt/sub-B07227_ses-01_task-realestate_run-03_bold_valid_mcf.nii.gz -reffile /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_03_wf/initial_boldref_wf/gen_ref/ref_sbref.nii.gz -mats -plots -rmsabs -rmsrel
+221006-15:50:11,131 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.bold_stc_wf.slice_timing_correction" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/bold_stc_wf/slice_timing_correction".
+221006-15:50:11,151 nipype.workflow INFO:
+	 [Node] Running "slice_timing_correction" ("nipype.interfaces.afni.preprocess.TShift"), a CommandLine Interface with command:
+3dTshift -ignore 0 -prefix sub-B07227_ses-01_task-realestate_run-01_bold_valid_tshift.nii.gz -tpattern @slice_timing.1D -TR 2.4s /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/bold_stc_wf/slice_timing_correction/sub-B07227_ses-01_task-realestate_run-01_bold_valid.nii.gz
+221006-15:50:49,310 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_ma_wf.init_aff".
+221006-15:50:51,123 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_ma_wf.norm" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_ma_wf/norm".
+221006-15:50:51,522 nipype.workflow INFO:
+	 [Node] Running "norm" ("niworkflows.interfaces.fixes.FixHeaderRegistration"), a CommandLine Interface with command:
+antsRegistration --collapse-output-transforms 1 --dimensionality 3 --float 1 --initial-moving-transform [ /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_ma_wf/init_aff/initialization.mat, 0 ] --initialize-transforms-per-stage 0 --interpolation Linear --output transform --transform Affine[ 0.1 ] --metric Mattes[ /templateflow/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-02_desc-fMRIPrep_boldref.nii.gz, /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/split/dir-j_tstep-001_pe-000.nii.gz, 1, 64, Random, 0.2 ] --convergence [ 200, 1e-09, 10 ] --smoothing-sigmas 2.0mm --shrink-factors 2 --use-estimate-learning-rate-once 1 --use-histogram-matching 1 --winsorize-image-intensities [ 0.05, 0.98 ]  --write-composite-transform 0
+221006-15:50:53,894 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_ma_wf.norm".
+221006-15:50:55,320 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_ma_wf.map_brainmask" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_ma_wf/map_brainmask".
+221006-15:50:55,322 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_02_wf.bold_stc_wf.slice_timing_correction" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_02_wf/bold_stc_wf/slice_timing_correction".
+221006-15:50:55,344 nipype.workflow INFO:
+	 [Node] Running "slice_timing_correction" ("nipype.interfaces.afni.preprocess.TShift"), a CommandLine Interface with command:
+3dTshift -ignore 0 -prefix sub-B07227_ses-01_task-realestate_run-02_bold_valid_tshift.nii.gz -tpattern @slice_timing.1D -TR 2.4s /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_02_wf/bold_stc_wf/slice_timing_correction/sub-B07227_ses-01_task-realestate_run-02_bold_valid.nii.gz
+221006-15:50:55,628 nipype.workflow INFO:
+	 [Node] Running "map_brainmask" ("niworkflows.interfaces.fixes.FixHeaderApplyTransforms"), a CommandLine Interface with command:
+antsApplyTransforms --default-value 0 --float 1 --input /templateflow/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-01_label-brain_probseg.nii.gz --interpolation BSpline --output tpl-MNI152NLin2009cAsym_res-01_label-brain_probseg_trans.nii.gz --reference-image /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/split/dir-j_tstep-001_pe-000.nii.gz --transform [ /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_ma_wf/norm/transform0GenericAffine.mat, 1 ]
+221006-15:50:56,392 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_04_wf.bold_hmc_wf.mcflirt" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_04_wf/bold_hmc_wf/mcflirt".
+221006-15:50:56,407 nipype.workflow INFO:
+	 [Node] Running "mcflirt" ("nipype.interfaces.fsl.preprocess.MCFLIRT"), a CommandLine Interface with command:
+mcflirt -in /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_04_wf/initial_boldref_wf/val_bold/mapflow/_val_bold0/sub-B07227_ses-01_task-realestate_run-04_bold_valid.nii.gz -out /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_04_wf/bold_hmc_wf/mcflirt/sub-B07227_ses-01_task-realestate_run-04_bold_valid_mcf.nii.gz -reffile /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_04_wf/initial_boldref_wf/gen_ref/ref_sbref.nii.gz -mats -plots -rmsabs -rmsrel
+221006-15:50:57,837 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_01_wf.initial_boldref_wf.gen_ref" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_rest_run_01_wf/initial_boldref_wf/gen_ref".
+221006-15:50:57,840 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_02_wf.initial_boldref_wf.val_sbref" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_rest_run_02_wf/initial_boldref_wf/val_sbref".
+221006-15:50:57,840 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_02_wf.initial_boldref_wf.val_bold" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_rest_run_02_wf/initial_boldref_wf/val_bold".
+221006-15:50:57,845 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.anat_preproc_wf.brain_extraction_wf.lap_tmpl" in "/work/fmriprep_wf/single_subject_B07227_wf/anat_preproc_wf/brain_extraction_wf/lap_tmpl".
+221006-15:50:57,845 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.anat_preproc_wf.brain_extraction_wf.full_wm" in "/work/fmriprep_wf/single_subject_B07227_wf/anat_preproc_wf/brain_extraction_wf/full_wm".
+221006-15:50:57,852 nipype.workflow INFO:
+	 [Node] Running "gen_ref" ("niworkflows.interfaces.registration.EstimateReferenceImage")
+221006-15:50:57,854 nipype.workflow INFO:
+	 [Node] Setting-up "_val_sbref0" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_rest_run_02_wf/initial_boldref_wf/val_sbref/mapflow/_val_sbref0".
+221006-15:50:57,855 nipype.workflow INFO:
+	 [Node] Running "full_wm" ("nipype.interfaces.utility.wrappers.Function")
+221006-15:50:57,856 nipype.workflow INFO:
+	 [Node] Setting-up "_val_bold0" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_rest_run_02_wf/initial_boldref_wf/val_bold/mapflow/_val_bold0".
+221006-15:50:57,858 nipype.workflow INFO:
+	 [Node] Running "lap_tmpl" ("nipype.interfaces.ants.utils.ImageMath"), a CommandLine Interface with command:
+ImageMath 3 tpl-OASIS30ANTs_res-01_T1w_maths.nii.gz Laplacian /templateflow/tpl-OASIS30ANTs/tpl-OASIS30ANTs_res-01_T1w.nii.gz 1.5 1
+221006-15:50:57,862 nipype.workflow INFO:
+	 [Node] Running "_val_sbref0" ("niworkflows.interfaces.images.ValidateImage")
+221006-15:50:57,864 nipype.workflow INFO:
+	 [Node] Running "_val_bold0" ("niworkflows.interfaces.images.ValidateImage")
+221006-15:50:57,897 nipype.workflow INFO:
+	 [Node] Finished "_val_bold0".
+221006-15:50:57,902 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_02_wf.initial_boldref_wf.val_bold".
+221006-15:50:57,918 nipype.workflow INFO:
+	 [Node] Finished "_val_sbref0".
+221006-15:50:57,924 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_02_wf.initial_boldref_wf.val_sbref".
+221006-15:50:57,964 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_01_wf.initial_boldref_wf.gen_ref".
+221006-15:50:58,729 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.anat_preproc_wf.brain_extraction_wf.full_wm".
+221006-15:50:59,336 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_ma_wf.map_brainmask".
+221006-15:51:00,389 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_03_wf.bold_stc_wf.slice_timing_correction" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_03_wf/bold_stc_wf/slice_timing_correction".
+221006-15:51:00,391 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_04_wf.bold_stc_wf.slice_timing_correction" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_04_wf/bold_stc_wf/slice_timing_correction".
+221006-15:51:00,393 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_ma_wf.binarize_mask" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_ma_wf/binarize_mask".
+221006-15:51:00,403 nipype.workflow INFO:
+	 [Node] Running "binarize_mask" ("niworkflows.interfaces.nibabel.Binarize")
+221006-15:51:00,410 nipype.workflow INFO:
+	 [Node] Running "slice_timing_correction" ("nipype.interfaces.afni.preprocess.TShift"), a CommandLine Interface with command:
+3dTshift -ignore 0 -prefix sub-B07227_ses-01_task-realestate_run-03_bold_valid_tshift.nii.gz -tpattern @slice_timing.1D -TR 2.4s /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_03_wf/bold_stc_wf/slice_timing_correction/sub-B07227_ses-01_task-realestate_run-03_bold_valid.nii.gz
+221006-15:51:00,415 nipype.workflow INFO:
+	 [Node] Running "slice_timing_correction" ("nipype.interfaces.afni.preprocess.TShift"), a CommandLine Interface with command:
+3dTshift -ignore 0 -prefix sub-B07227_ses-01_task-realestate_run-04_bold_valid_tshift.nii.gz -tpattern @slice_timing.1D -TR 2.4s /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_04_wf/bold_stc_wf/slice_timing_correction/sub-B07227_ses-01_task-realestate_run-04_bold_valid.nii.gz
+221006-15:51:00,582 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_ma_wf.binarize_mask".
+221006-15:51:00,956 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_01_wf.bold_hmc_wf.mcflirt" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_rest_run_01_wf/bold_hmc_wf/mcflirt".
+221006-15:51:00,972 nipype.workflow INFO:
+	 [Node] Running "mcflirt" ("nipype.interfaces.fsl.preprocess.MCFLIRT"), a CommandLine Interface with command:
+mcflirt -in /data/sub-B07227/ses-01/func/sub-B07227_ses-01_task-rest_run-01_bold.nii.gz -out /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_rest_run_01_wf/bold_hmc_wf/mcflirt/sub-B07227_ses-01_task-rest_run-01_bold_mcf.nii.gz -reffile /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_rest_run_01_wf/initial_boldref_wf/gen_ref/ref_sbref.nii.gz -mats -plots -rmsabs -rmsrel
+221006-15:51:02,407 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_02_wf.initial_boldref_wf.gen_ref" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_rest_run_02_wf/initial_boldref_wf/gen_ref".
+221006-15:51:02,421 nipype.workflow INFO:
+	 [Node] Running "gen_ref" ("niworkflows.interfaces.registration.EstimateReferenceImage")
+221006-15:51:02,520 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_02_wf.initial_boldref_wf.gen_ref".
+221006-15:51:02,915 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_ma_wf.pre_mask_dilate" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_ma_wf/pre_mask_dilate".
+221006-15:51:02,931 nipype.workflow INFO:
+	 [Node] Running "pre_mask_dilate" ("nipype.interfaces.fsl.maths.DilateImage"), a CommandLine Interface with command:
+fslmaths -dt char /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_ma_wf/binarize_mask/tpl-MNI152NLin2009cAsym_res-01_label-brain_probseg_trans_mask.nii.gz -kernel sphere 3.0000 -dilF /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_ma_wf/pre_mask_dilate/tpl-MNI152NLin2009cAsym_res-01_label-brain_probseg_trans_mask_dil.nii.gz
+221006-15:51:05,27 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_01_wf.bold_stc_wf.slice_timing_correction" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_rest_run_01_wf/bold_stc_wf/slice_timing_correction".
+221006-15:51:05,45 nipype.workflow INFO:
+	 [Node] Running "slice_timing_correction" ("nipype.interfaces.afni.preprocess.TShift"), a CommandLine Interface with command:
+3dTshift -ignore 0 -prefix sub-B07227_ses-01_task-rest_run-01_bold_tshift.nii.gz -tpattern @slice_timing.1D -TR 1.067s /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_rest_run_01_wf/bold_stc_wf/slice_timing_correction/sub-B07227_ses-01_task-rest_run-01_bold.nii.gz
+221006-15:51:06,961 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_ma_wf.pre_mask_dilate".
+221006-15:51:10,156 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_02_wf.bold_hmc_wf.mcflirt" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_rest_run_02_wf/bold_hmc_wf/mcflirt".
+221006-15:51:10,173 nipype.workflow INFO:
+	 [Node] Running "mcflirt" ("nipype.interfaces.fsl.preprocess.MCFLIRT"), a CommandLine Interface with command:
+mcflirt -in /data/sub-B07227/ses-01/func/sub-B07227_ses-01_task-rest_run-02_bold.nii.gz -out /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_rest_run_02_wf/bold_hmc_wf/mcflirt/sub-B07227_ses-01_task-rest_run-02_bold_mcf.nii.gz -reffile /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_rest_run_02_wf/initial_boldref_wf/gen_ref/ref_sbref.nii.gz -mats -plots -rmsabs -rmsrel
+221006-15:51:10,661 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.anat_preproc_wf.brain_extraction_wf.lap_tmpl".
+221006-15:51:12,910 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_ma_wf.n4_correct" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_ma_wf/n4_correct".
+221006-15:51:13,68 nipype.workflow INFO:
+	 [Node] Running "n4_correct" ("niworkflows.interfaces.fixes.FixN4BiasFieldCorrection"), a CommandLine Interface with command:
+N4BiasFieldCorrection --bspline-fitting [ 200 ] -d 3 --input-image /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/split/dir-j_tstep-001_pe-000.nii.gz --mask-image /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_ma_wf/check_hdr/tpl-MNI152NLin2009cAsym_res-01_label-brain_probseg_trans_mask_dil_hdr.nii.gz --output dir-j_tstep-001_pe-000_corrected.nii.gz -r
+221006-15:51:28,516 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_ma_wf.n4_correct".
+221006-15:51:30,931 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_ma_wf.skullstrip_first_pass" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_ma_wf/skullstrip_first_pass".
+221006-15:51:30,949 nipype.workflow INFO:
+	 [Node] Running "skullstrip_first_pass" ("nipype.interfaces.fsl.preprocess.BET"), a CommandLine Interface with command:
+bet /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_ma_wf/n4_correct/dir-j_tstep-001_pe-000_corrected.nii.gz /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_ma_wf/skullstrip_first_pass/dir-j_tstep-001_pe-000_corrected_brain.nii.gz -f 0.20 -m
+221006-15:51:34,144 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_ma_wf.skullstrip_first_pass".
+221006-15:51:34,950 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_ma_wf.skullstrip_first_dilate" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_ma_wf/skullstrip_first_dilate".
+221006-15:51:34,969 nipype.workflow INFO:
+	 [Node] Running "skullstrip_first_dilate" ("nipype.interfaces.fsl.maths.DilateImage"), a CommandLine Interface with command:
+fslmaths -dt char /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_ma_wf/skullstrip_first_pass/dir-j_tstep-001_pe-000_corrected_brain_mask.nii.gz -kernel sphere 6.0000 -dilF /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_ma_wf/skullstrip_first_dilate/dir-j_tstep-001_pe-000_corrected_brain_mask_dil.nii.gz
+221006-15:51:40,29 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_01_wf.bold_stc_wf.slice_timing_correction".
+221006-15:51:40,930 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_01_wf.bold_stc_wf.copy_xform" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_rest_run_01_wf/bold_stc_wf/copy_xform".
+221006-15:51:40,943 nipype.workflow INFO:
+	 [Node] Running "copy_xform" ("niworkflows.interfaces.utils.CopyXForm")
+221006-15:51:49,313 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_01_wf.bold_stc_wf.copy_xform".
+221006-15:51:50,860 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_01_wf.bold_split" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_rest_run_01_wf/bold_split".
+221006-15:51:50,875 nipype.workflow INFO:
+	 [Node] Running "bold_split" ("nipype.interfaces.fsl.utils.Split"), a CommandLine Interface with command:
+fslsplit /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_rest_run_01_wf/bold_stc_wf/copy_xform/sub-B07227_ses-01_task-rest_run-01_bold_tshift_xform.nii.gz -t
+221006-15:51:59,942 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_ma_wf.skullstrip_first_dilate".
+221006-15:52:00,869 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_ma_wf.skullstrip_first_mask" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_ma_wf/skullstrip_first_mask".
+221006-15:52:00,890 nipype.workflow INFO:
+	 [Node] Running "skullstrip_first_mask" ("nipype.interfaces.fsl.maths.ApplyMask"), a CommandLine Interface with command:
+fslmaths /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_ma_wf/skullstrip_first_pass/dir-j_tstep-001_pe-000_corrected_brain.nii.gz -mas /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_ma_wf/skullstrip_first_dilate/dir-j_tstep-001_pe-000_corrected_brain_mask_dil.nii.gz /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_ma_wf/skullstrip_first_mask/dir-j_tstep-001_pe-000_corrected_brain_masked.nii.gz
+221006-15:52:01,313 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_ma_wf.skullstrip_first_mask".
+221006-15:52:02,918 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_ma_wf.unifize" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_ma_wf/unifize".
+221006-15:52:02,936 nipype.workflow INFO:
+	 [Node] Running "unifize" ("nipype.interfaces.afni.utils.Unifize"), a CommandLine Interface with command:
+3dUnifize -clfrac 0.2 -rbt 18.3 65.0 90.0 -prefix uni.nii.gz -T2 -input /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_ma_wf/unifize/dir-j_tstep-001_pe-000_corrected_brain_masked.nii.gz
+221006-15:52:10,341 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_ma_wf.unifize".
+221006-15:52:10,621 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.bold_stc_wf.slice_timing_correction".
+221006-15:52:10,986 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_ma_wf.fixhdr_unifize" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_ma_wf/fixhdr_unifize".
+221006-15:52:11,0 nipype.workflow INFO:
+	 [Node] Running "fixhdr_unifize" ("niworkflows.interfaces.utils.CopyXForm")
+221006-15:52:11,146 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_ma_wf.fixhdr_unifize".
+221006-15:52:12,985 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_ma_wf.skullstrip_second_pass" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_ma_wf/skullstrip_second_pass".
+221006-15:52:12,985 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.bold_stc_wf.copy_xform" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/bold_stc_wf/copy_xform".
+221006-15:52:12,998 nipype.workflow INFO:
+	 [Node] Running "skullstrip_second_pass" ("nipype.interfaces.afni.preprocess.Automask"), a CommandLine Interface with command:
+3dAutomask -apply_prefix uni_xform_masked.nii.gz -dilate 1 -prefix uni_xform_mask.nii.gz /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_ma_wf/skullstrip_second_pass/uni_xform.nii.gz
+221006-15:52:12,999 nipype.workflow INFO:
+	 [Node] Running "copy_xform" ("niworkflows.interfaces.utils.CopyXForm")
+221006-15:52:15,353 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_ma_wf.skullstrip_second_pass".
+221006-15:52:16,842 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_ma_wf.fixhdr_skullstrip2" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_ma_wf/fixhdr_skullstrip2".
+221006-15:52:17,159 nipype.workflow INFO:
+	 [Node] Running "fixhdr_skullstrip2" ("niworkflows.interfaces.utils.CopyXForm")
+221006-15:52:17,238 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_ma_wf.fixhdr_skullstrip2".
+221006-15:52:18,966 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_ma_wf.combine_masks" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_ma_wf/combine_masks".
+221006-15:52:18,981 nipype.workflow INFO:
+	 [Node] Running "combine_masks" ("nipype.interfaces.fsl.maths.BinaryMaths"), a CommandLine Interface with command:
+fslmaths /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_ma_wf/skullstrip_first_pass/dir-j_tstep-001_pe-000_corrected_brain_mask.nii.gz -mul /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_ma_wf/fixhdr_skullstrip2/uni_xform_mask_xform.nii.gz /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_ma_wf/combine_masks/dir-j_tstep-001_pe-000_corrected_brain_mask_maths.nii.gz
+221006-15:52:19,261 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_ma_wf.combine_masks".
+221006-15:52:20,796 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_01_wf.bold_split".
+221006-15:52:20,941 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_ma_wf.apply_mask" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_ma_wf/apply_mask".
+221006-15:52:20,955 nipype.workflow INFO:
+	 [Node] Running "apply_mask" ("nipype.interfaces.fsl.maths.ApplyMask"), a CommandLine Interface with command:
+fslmaths /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_ma_wf/fixhdr_unifize/uni_xform.nii.gz -mas /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_ma_wf/combine_masks/dir-j_tstep-001_pe-000_corrected_brain_mask_maths.nii.gz /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_ma_wf/apply_mask/uni_xform_masked.nii.gz
+221006-15:52:21,231 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_ma_wf.apply_mask".
+221006-15:52:22,904 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_01_wf.bold_std_trans_wf.gen_ref" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_rest_run_01_wf/bold_std_trans_wf/_std_target_MNI152NLin2009cAsym.res2/gen_ref".
+221006-15:52:22,966 nipype.workflow INFO:
+	 [Node] Running "gen_ref" ("niworkflows.interfaces.utils.GenerateSamplingReference")
+221006-15:52:22,976 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_01_wf.bold_std_trans_wf.gen_ref".
+221006-15:52:23,262 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.anat_preproc_wf.brain_extraction_wf.mrg_tmpl" in "/work/fmriprep_wf/single_subject_B07227_wf/anat_preproc_wf/brain_extraction_wf/mrg_tmpl".
+221006-15:52:23,274 nipype.workflow INFO:
+	 [Node] Running "mrg_tmpl" ("nipype.interfaces.utility.base.Merge")
+221006-15:52:23,282 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.anat_preproc_wf.brain_extraction_wf.mrg_tmpl".
+221006-15:52:25,83 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_02_wf.bold_stc_wf.slice_timing_correction" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_rest_run_02_wf/bold_stc_wf/slice_timing_correction".
+221006-15:52:25,84 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.anat_preproc_wf.brain_extraction_wf.res_tmpl" in "/work/fmriprep_wf/single_subject_B07227_wf/anat_preproc_wf/brain_extraction_wf/res_tmpl".
+221006-15:52:25,94 nipype.workflow INFO:
+	 [Node] Running "res_tmpl" ("niworkflows.interfaces.images.RegridToZooms")
+221006-15:52:25,104 nipype.workflow INFO:
+	 [Node] Running "slice_timing_correction" ("nipype.interfaces.afni.preprocess.TShift"), a CommandLine Interface with command:
+3dTshift -ignore 0 -prefix sub-B07227_ses-01_task-rest_run-02_bold_tshift.nii.gz -tpattern @slice_timing.1D -TR 1.067s /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_rest_run_02_wf/bold_stc_wf/slice_timing_correction/sub-B07227_ses-01_task-rest_run-02_bold.nii.gz
+221006-15:52:27,485 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.anat_preproc_wf.brain_extraction_wf.res_tmpl".
+221006-15:52:30,968 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.bidssrc" in "/work/fmriprep_wf/single_subject_B07227_wf/bidssrc".
+221006-15:52:31,29 nipype.workflow INFO:
+	 [Node] Running "bidssrc" ("niworkflows.interfaces.bids.BIDSDataGrabber")
+221006-15:52:31,30 nipype.interface INFO:
+	 No "t2w" images found for sub-B07227
+221006-15:52:31,30 nipype.interface INFO:
+	 No "flair" images found for sub-B07227
+221006-15:52:31,30 nipype.interface INFO:
+	 No "roi" images found for sub-B07227
+221006-15:52:31,40 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.bidssrc".
+221006-15:52:32,970 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.anat_preproc_wf.anat_template_wf.t1w_ref_dimensions" in "/work/fmriprep_wf/single_subject_B07227_wf/anat_preproc_wf/anat_template_wf/t1w_ref_dimensions".
+221006-15:52:32,983 nipype.workflow INFO:
+	 [Node] Running "t1w_ref_dimensions" ("niworkflows.interfaces.images.TemplateDimensions")
+221006-15:52:33,127 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.anat_preproc_wf.anat_template_wf.t1w_ref_dimensions".
+221006-15:52:34,945 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.anat_preproc_wf.anat_derivatives_wf.raw_sources" in "/work/fmriprep_wf/single_subject_B07227_wf/anat_preproc_wf/anat_derivatives_wf/raw_sources".
+221006-15:52:35,570 nipype.workflow INFO:
+	 [Node] Running "raw_sources" ("nipype.interfaces.utility.wrappers.Function")
+221006-15:52:35,580 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.anat_preproc_wf.anat_derivatives_wf.raw_sources".
+221006-15:52:37,392 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.anat_preproc_wf.anat_template_wf.t1w_conform" in "/work/fmriprep_wf/single_subject_B07227_wf/anat_preproc_wf/anat_template_wf/t1w_conform".
+221006-15:52:37,403 nipype.workflow INFO:
+	 [Node] Setting-up "_t1w_conform0" in "/work/fmriprep_wf/single_subject_B07227_wf/anat_preproc_wf/anat_template_wf/t1w_conform/mapflow/_t1w_conform0".
+221006-15:52:37,412 nipype.workflow INFO:
+	 [Node] Running "_t1w_conform0" ("niworkflows.interfaces.images.Conform")
+221006-15:52:37,446 nipype.workflow INFO:
+	 [Node] Finished "_t1w_conform0".
+221006-15:52:37,452 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.anat_preproc_wf.anat_template_wf.t1w_conform".
+221006-15:52:39,237 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.anat_preproc_wf.anat_template_wf.get1st" in "/work/fmriprep_wf/single_subject_B07227_wf/anat_preproc_wf/anat_template_wf/get1st".
+221006-15:52:39,247 nipype.workflow INFO:
+	 [Node] Running "get1st" ("nipype.interfaces.utility.base.Select")
+221006-15:52:39,256 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.anat_preproc_wf.anat_template_wf.get1st".
+221006-15:52:41,798 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.bids_info" in "/work/fmriprep_wf/single_subject_B07227_wf/bids_info".
+221006-15:52:41,807 nipype.workflow INFO:
+	 [Node] Running "bids_info" ("niworkflows.interfaces.bids.BIDSInfo")
+221006-15:52:41,823 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.bids_info".
+221006-15:52:42,845 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.anat_preproc_wf.surface_recon_wf.fov_check" in "/work/fmriprep_wf/single_subject_B07227_wf/anat_preproc_wf/surface_recon_wf/fov_check".
+221006-15:52:43,318 nipype.workflow INFO:
+	 [Node] Running "fov_check" ("nipype.interfaces.utility.wrappers.Function")
+221006-15:52:43,373 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.bold_stc_wf.copy_xform".
+221006-15:52:43,806 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.anat_preproc_wf.surface_recon_wf.fov_check".
+221006-15:52:44,928 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.anat_preproc_wf.surface_recon_wf.recon_config" in "/work/fmriprep_wf/single_subject_B07227_wf/anat_preproc_wf/surface_recon_wf/recon_config".
+221006-15:52:44,930 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.bold_split" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/bold_split".
+221006-15:52:44,939 nipype.workflow INFO:
+	 [Node] Running "recon_config" ("niworkflows.interfaces.freesurfer.FSDetectInputs")
+221006-15:52:44,945 nipype.workflow INFO:
+	 [Node] Running "bold_split" ("nipype.interfaces.fsl.utils.Split"), a CommandLine Interface with command:
+fslsplit /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/bold_stc_wf/copy_xform/sub-B07227_ses-01_task-realestate_run-01_bold_valid_tshift_xform.nii.gz -t
+221006-15:52:44,968 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.anat_preproc_wf.surface_recon_wf.recon_config".
+221006-15:52:46,576 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_01_wf.bold_hmc_wf.mcflirt".
+221006-15:52:46,827 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.anat_preproc_wf.brain_extraction_wf.truncate_images" in "/work/fmriprep_wf/single_subject_B07227_wf/anat_preproc_wf/brain_extraction_wf/truncate_images".
+221006-15:52:46,837 nipype.workflow INFO:
+	 [Node] Setting-up "_truncate_images0" in "/work/fmriprep_wf/single_subject_B07227_wf/anat_preproc_wf/brain_extraction_wf/truncate_images/mapflow/_truncate_images0".
+221006-15:52:46,846 nipype.workflow INFO:
+	 [Node] Running "_truncate_images0" ("nipype.interfaces.ants.utils.ImageMath"), a CommandLine Interface with command:
+ImageMath 3 sub-B07227_ses-01_T1w_maths.nii.gz TruncateImageIntensity /data/sub-B07227/ses-01/anat/sub-B07227_ses-01_T1w.nii.gz 0.01 0.999 256
+221006-15:52:49,165 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_01_wf.bold_hmc_wf.normalize_motion" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_rest_run_01_wf/bold_hmc_wf/normalize_motion".
+221006-15:52:49,206 nipype.workflow INFO:
+	 [Node] Running "normalize_motion" ("niworkflows.interfaces.utils.NormalizeMotionParams")
+221006-15:52:49,227 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_01_wf.bold_hmc_wf.normalize_motion".
+221006-15:52:51,484 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_01_wf.bold_confounds_wf.fdisp" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_rest_run_01_wf/bold_confounds_wf/fdisp".
+221006-15:52:51,495 nipype.workflow INFO:
+	 [Node] Running "fdisp" ("nipype.algorithms.confounds.FramewiseDisplacement")
+221006-15:52:51,513 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_01_wf.bold_confounds_wf.fdisp".
+221006-15:52:54,989 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_02_wf.bold_stc_wf.slice_timing_correction".
+221006-15:52:54,992 nipype.workflow INFO:
+	 [Node] Finished "_truncate_images0".
+221006-15:52:54,998 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.anat_preproc_wf.brain_extraction_wf.truncate_images".
+221006-15:52:59,493 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_02_wf.bold_stc_wf.slice_timing_correction".
+221006-15:52:59,645 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_03_wf.bold_stc_wf.slice_timing_correction".
+221006-15:53:00,4 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_02_wf.bold_hmc_wf.mcflirt".
+221006-15:53:01,320 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_04_wf.bold_stc_wf.slice_timing_correction".
+221006-15:53:04,318 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_02_wf.bold_stc_wf.copy_xform" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_02_wf/bold_stc_wf/copy_xform".
+221006-15:53:04,319 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_04_wf.bold_stc_wf.copy_xform" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_04_wf/bold_stc_wf/copy_xform".
+221006-15:53:04,320 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_03_wf.bold_stc_wf.copy_xform" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_03_wf/bold_stc_wf/copy_xform".
+221006-15:53:04,331 nipype.workflow INFO:
+	 [Node] Running "copy_xform" ("niworkflows.interfaces.utils.CopyXForm")
+221006-15:53:04,331 nipype.workflow INFO:
+	 [Node] Running "copy_xform" ("niworkflows.interfaces.utils.CopyXForm")
+221006-15:53:04,334 nipype.workflow INFO:
+	 [Node] Running "copy_xform" ("niworkflows.interfaces.utils.CopyXForm")
+221006-15:53:05,140 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_02_wf.bold_hmc_wf.normalize_motion" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_rest_run_02_wf/bold_hmc_wf/normalize_motion".
+221006-15:53:05,154 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_02_wf.bold_stc_wf.copy_xform" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_rest_run_02_wf/bold_stc_wf/copy_xform".
+221006-15:53:05,203 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.anat_preproc_wf.fs_isrunning" in "/work/fmriprep_wf/single_subject_B07227_wf/anat_preproc_wf/fs_isrunning".
+221006-15:53:05,997 nipype.workflow INFO:
+	 [Node] Running "normalize_motion" ("niworkflows.interfaces.utils.NormalizeMotionParams")
+221006-15:53:08,743 nipype.workflow INFO:
+	 [Node] Running "copy_xform" ("niworkflows.interfaces.utils.CopyXForm")
+221006-15:53:08,803 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_02_wf.bold_hmc_wf.normalize_motion".
+221006-15:53:08,803 nipype.workflow INFO:
+	 [Node] Running "fs_isrunning" ("nipype.interfaces.utility.wrappers.Function")
+221006-15:53:08,815 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.anat_preproc_wf.fs_isrunning".
+221006-15:53:09,324 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.bold_hmc_wf.mcflirt".
+221006-15:53:10,632 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_02_wf.bold_confounds_wf.fdisp" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_rest_run_02_wf/bold_confounds_wf/fdisp".
+221006-15:53:10,646 nipype.workflow INFO:
+	 [Node] Running "fdisp" ("nipype.algorithms.confounds.FramewiseDisplacement")
+221006-15:53:10,671 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_02_wf.bold_confounds_wf.fdisp".
+221006-15:53:12,381 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.bold_hmc_wf.normalize_motion" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/bold_hmc_wf/normalize_motion".
+221006-15:53:12,419 nipype.workflow INFO:
+	 [Node] Running "normalize_motion" ("niworkflows.interfaces.utils.NormalizeMotionParams")
+221006-15:53:12,439 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.bold_hmc_wf.normalize_motion".
+221006-15:53:14,760 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.bold_confounds_wf.fdisp" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/bold_confounds_wf/fdisp".
+221006-15:53:14,770 nipype.workflow INFO:
+	 [Node] Running "fdisp" ("nipype.algorithms.confounds.FramewiseDisplacement")
+221006-15:53:14,789 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.bold_confounds_wf.fdisp".
+221006-15:53:17,241 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_02_wf.bold_stc_wf.copy_xform".
+221006-15:53:18,22 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_02_wf.bold_split" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_rest_run_02_wf/bold_split".
+221006-15:53:18,33 nipype.workflow INFO:
+	 [Node] Running "bold_split" ("nipype.interfaces.fsl.utils.Split"), a CommandLine Interface with command:
+fslsplit /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_rest_run_02_wf/bold_stc_wf/copy_xform/sub-B07227_ses-01_task-rest_run-02_bold_tshift_xform.nii.gz -t
+221006-15:53:30,320 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_03_wf.bold_hmc_wf.mcflirt".
+221006-15:53:30,869 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_02_wf.bold_hmc_wf.mcflirt".
+221006-15:53:32,475 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_02_wf.bold_hmc_wf.normalize_motion" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_02_wf/bold_hmc_wf/normalize_motion".
+221006-15:53:32,517 nipype.workflow INFO:
+	 [Node] Running "normalize_motion" ("niworkflows.interfaces.utils.NormalizeMotionParams")
+221006-15:53:32,539 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_02_wf.bold_hmc_wf.normalize_motion".
+221006-15:53:32,896 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_03_wf.bold_hmc_wf.normalize_motion" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_03_wf/bold_hmc_wf/normalize_motion".
+221006-15:53:32,932 nipype.workflow INFO:
+	 [Node] Running "normalize_motion" ("niworkflows.interfaces.utils.NormalizeMotionParams")
+221006-15:53:32,951 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_03_wf.bold_hmc_wf.normalize_motion".
+221006-15:53:35,12 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_02_wf.bold_confounds_wf.fdisp" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_02_wf/bold_confounds_wf/fdisp".
+221006-15:53:35,254 nipype.workflow INFO:
+	 [Node] Running "fdisp" ("nipype.algorithms.confounds.FramewiseDisplacement")
+221006-15:53:38,919 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_02_wf.bold_confounds_wf.fdisp".
+221006-15:53:38,982 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_04_wf.bold_stc_wf.copy_xform".
+221006-15:53:38,983 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_02_wf.bold_stc_wf.copy_xform".
+221006-15:53:38,986 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_03_wf.bold_stc_wf.copy_xform".
+221006-15:53:39,559 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_03_wf.bold_confounds_wf.fdisp" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_03_wf/bold_confounds_wf/fdisp".
+221006-15:53:39,572 nipype.workflow INFO:
+	 [Node] Running "fdisp" ("nipype.algorithms.confounds.FramewiseDisplacement")
+221006-15:53:39,592 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_03_wf.bold_confounds_wf.fdisp".
+221006-15:53:40,31 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_op_wf.init_aff" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_op_wf/init_aff".
+221006-15:53:40,59 nipype.workflow INFO:
+	 [Node] Running "init_aff" ("nipype.interfaces.ants.utils.AI"), a CommandLine Interface with command:
+antsAI -c [10,1e-06,10] -d 3 -x /templateflow/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-02_desc-brain_mask.nii.gz -m Mattes[/templateflow/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-02_desc-fMRIPrep_boldref.nii.gz,/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/split/dir-j-_tstep-000_pe-000.nii.gz,32,Regular,0.2] -o initialization.mat -p 0 -s [20,0.12] -g [40.0,0x40x40] -t Affine[0.1] -v 1
+221006-15:53:42,194 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_02_wf.bold_split" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_02_wf/bold_split".
+221006-15:53:42,207 nipype.workflow INFO:
+	 [Node] Running "bold_split" ("nipype.interfaces.fsl.utils.Split"), a CommandLine Interface with command:
+fslsplit /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_02_wf/bold_stc_wf/copy_xform/sub-B07227_ses-01_task-realestate_run-02_bold_valid_tshift_xform.nii.gz -t
+221006-15:53:49,714 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_02_wf.bold_split".
+221006-15:53:52,94 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_03_wf.bold_split" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_03_wf/bold_split".
+221006-15:53:52,106 nipype.workflow INFO:
+	 [Node] Running "bold_split" ("nipype.interfaces.fsl.utils.Split"), a CommandLine Interface with command:
+fslsplit /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_03_wf/bold_stc_wf/copy_xform/sub-B07227_ses-01_task-realestate_run-03_bold_valid_tshift_xform.nii.gz -t
+221006-15:54:14,120 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_04_wf.bold_hmc_wf.mcflirt".
+221006-15:54:16,608 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_04_wf.bold_hmc_wf.normalize_motion" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_04_wf/bold_hmc_wf/normalize_motion".
+221006-15:54:16,645 nipype.workflow INFO:
+	 [Node] Running "normalize_motion" ("niworkflows.interfaces.utils.NormalizeMotionParams")
+221006-15:54:16,667 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_04_wf.bold_hmc_wf.normalize_motion".
+221006-15:54:18,903 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_04_wf.bold_confounds_wf.fdisp" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_04_wf/bold_confounds_wf/fdisp".
+221006-15:54:18,916 nipype.workflow INFO:
+	 [Node] Running "fdisp" ("nipype.algorithms.confounds.FramewiseDisplacement")
+221006-15:54:18,935 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_04_wf.bold_confounds_wf.fdisp".
+221006-15:54:19,652 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.bold_split".
+221006-15:54:20,13 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_04_wf.bold_split" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_04_wf/bold_split".
+221006-15:54:20,26 nipype.workflow INFO:
+	 [Node] Running "bold_split" ("nipype.interfaces.fsl.utils.Split"), a CommandLine Interface with command:
+fslsplit /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_04_wf/bold_stc_wf/copy_xform/sub-B07227_ses-01_task-realestate_run-04_bold_valid_tshift_xform.nii.gz -t
+221006-15:54:22,150 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.bold_std_trans_wf.gen_ref" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/bold_std_trans_wf/_std_target_MNI152NLin2009cAsym.res2/gen_ref".
+221006-15:54:22,218 nipype.workflow INFO:
+	 [Node] Running "gen_ref" ("niworkflows.interfaces.utils.GenerateSamplingReference")
+221006-15:54:22,226 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.bold_std_trans_wf.gen_ref".
+221006-15:54:24,107 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_02_wf.bold_std_trans_wf.gen_ref" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_rest_run_02_wf/bold_std_trans_wf/_std_target_MNI152NLin2009cAsym.res2/gen_ref".
+221006-15:54:24,216 nipype.workflow INFO:
+	 [Node] Running "gen_ref" ("niworkflows.interfaces.utils.GenerateSamplingReference")
+221006-15:54:24,226 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_rest_run_02_wf.bold_std_trans_wf.gen_ref".
+221006-15:54:52,389 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_op_wf.init_aff".
+221006-15:54:54,156 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_op_wf.norm" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_op_wf/norm".
+221006-15:54:54,182 nipype.workflow INFO:
+	 [Node] Running "norm" ("niworkflows.interfaces.fixes.FixHeaderRegistration"), a CommandLine Interface with command:
+antsRegistration --collapse-output-transforms 1 --dimensionality 3 --float 1 --initial-moving-transform [ /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_op_wf/init_aff/initialization.mat, 0 ] --initialize-transforms-per-stage 0 --interpolation Linear --output transform --transform Affine[ 0.1 ] --metric Mattes[ /templateflow/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-02_desc-fMRIPrep_boldref.nii.gz, /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/split/dir-j-_tstep-000_pe-000.nii.gz, 1, 64, Random, 0.2 ] --convergence [ 200, 1e-09, 10 ] --smoothing-sigmas 2.0mm --shrink-factors 2 --use-estimate-learning-rate-once 1 --use-histogram-matching 1 --winsorize-image-intensities [ 0.05, 0.98 ]  --write-composite-transform 0
+221006-15:54:56,373 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_op_wf.norm".
+221006-15:54:58,49 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_op_wf.map_brainmask" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_op_wf/map_brainmask".
+221006-15:54:58,62 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.bold_hmc_wf.fsl2itk" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/bold_hmc_wf/fsl2itk".
+221006-15:54:58,73 nipype.workflow INFO:
+	 [Node] Running "map_brainmask" ("niworkflows.interfaces.fixes.FixHeaderApplyTransforms"), a CommandLine Interface with command:
+antsApplyTransforms --default-value 0 --float 1 --input /templateflow/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-01_label-brain_probseg.nii.gz --interpolation BSpline --output tpl-MNI152NLin2009cAsym_res-01_label-brain_probseg_trans.nii.gz --reference-image /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/split/dir-j-_tstep-000_pe-000.nii.gz --transform [ /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_op_wf/norm/transform0GenericAffine.mat, 1 ]
+221006-15:54:58,194 nipype.workflow INFO:
+	 [Node] Running "fsl2itk" ("niworkflows.interfaces.itk.MCFLIRT2ITK")
+221006-15:55:00,822 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_op_wf.map_brainmask".
+221006-15:55:02,31 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_op_wf.binarize_mask" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_op_wf/binarize_mask".
+221006-15:55:02,41 nipype.workflow INFO:
+	 [Node] Running "binarize_mask" ("niworkflows.interfaces.nibabel.Binarize")
+221006-15:55:02,209 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_op_wf.binarize_mask".
+221006-15:55:04,94 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_op_wf.pre_mask_dilate" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_op_wf/pre_mask_dilate".
+221006-15:55:04,107 nipype.workflow INFO:
+	 [Node] Running "pre_mask_dilate" ("nipype.interfaces.fsl.maths.DilateImage"), a CommandLine Interface with command:
+fslmaths -dt char /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_op_wf/binarize_mask/tpl-MNI152NLin2009cAsym_res-01_label-brain_probseg_trans_mask.nii.gz -kernel sphere 3.0000 -dilF /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_op_wf/pre_mask_dilate/tpl-MNI152NLin2009cAsym_res-01_label-brain_probseg_trans_mask_dil.nii.gz
+221006-15:55:08,75 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_op_wf.pre_mask_dilate".
+221006-15:55:08,320 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_02_wf.bold_split".
+221006-15:55:10,730 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_02_wf.bold_std_trans_wf.gen_ref" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_02_wf/bold_std_trans_wf/_std_target_MNI152NLin2009cAsym.res2/gen_ref".
+221006-15:55:10,787 nipype.workflow INFO:
+	 [Node] Running "gen_ref" ("niworkflows.interfaces.utils.GenerateSamplingReference")
+221006-15:55:10,796 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_02_wf.bold_std_trans_wf.gen_ref".
+221006-15:55:12,196 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_op_wf.n4_correct" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_op_wf/n4_correct".
+221006-15:55:12,303 nipype.workflow INFO:
+	 [Node] Running "n4_correct" ("niworkflows.interfaces.fixes.FixN4BiasFieldCorrection"), a CommandLine Interface with command:
+N4BiasFieldCorrection --bspline-fitting [ 200 ] -d 3 --input-image /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/split/dir-j-_tstep-000_pe-000.nii.gz --mask-image /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_op_wf/check_hdr/tpl-MNI152NLin2009cAsym_res-01_label-brain_probseg_trans_mask_dil_hdr.nii.gz --output dir-j-_tstep-000_pe-000_corrected.nii.gz -r
+221006-15:55:19,327 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_03_wf.bold_split".
+221006-15:55:20,130 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_03_wf.bold_std_trans_wf.gen_ref" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_03_wf/bold_std_trans_wf/_std_target_MNI152NLin2009cAsym.res2/gen_ref".
+221006-15:55:20,187 nipype.workflow INFO:
+	 [Node] Running "gen_ref" ("niworkflows.interfaces.utils.GenerateSamplingReference")
+221006-15:55:20,196 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_03_wf.bold_std_trans_wf.gen_ref".
+221006-15:55:26,391 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_op_wf.n4_correct".
+221006-15:55:28,193 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_op_wf.skullstrip_first_pass" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_op_wf/skullstrip_first_pass".
+221006-15:55:28,207 nipype.workflow INFO:
+	 [Node] Running "skullstrip_first_pass" ("nipype.interfaces.fsl.preprocess.BET"), a CommandLine Interface with command:
+bet /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_op_wf/n4_correct/dir-j-_tstep-000_pe-000_corrected.nii.gz /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_op_wf/skullstrip_first_pass/dir-j-_tstep-000_pe-000_corrected_brain.nii.gz -f 0.20 -m
+221006-15:55:46,884 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_04_wf.bold_split".
+221006-15:55:48,84 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_04_wf.bold_std_trans_wf.gen_ref" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_04_wf/bold_std_trans_wf/_std_target_MNI152NLin2009cAsym.res2/gen_ref".
+221006-15:55:48,139 nipype.workflow INFO:
+	 [Node] Running "gen_ref" ("niworkflows.interfaces.utils.GenerateSamplingReference")
+221006-15:55:48,146 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_04_wf.bold_std_trans_wf.gen_ref".
+221006-15:55:50,296 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.bold_hmc_wf.fsl2itk".
+221006-15:55:52,123 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.initial_boldref_wf.enhance_and_skullstrip_bold_wf.init_aff" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/initial_boldref_wf/enhance_and_skullstrip_bold_wf/init_aff".
+221006-15:55:52,156 nipype.workflow INFO:
+	 [Node] Running "init_aff" ("nipype.interfaces.ants.utils.AI"), a CommandLine Interface with command:
+antsAI -c [10,1e-06,10] -d 3 -x /templateflow/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-02_desc-brain_mask.nii.gz -m Mattes[/templateflow/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-02_desc-fMRIPrep_boldref.nii.gz,/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/initial_boldref_wf/gen_ref/ref_sbref.nii.gz,32,Regular,0.2] -o initialization.mat -p 0 -s [20,0.12] -g [40.0,0x40x40] -t Affine[0.1] -v 1
+221006-15:55:52,724 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_op_wf.skullstrip_first_pass".
+221006-15:55:54,92 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_op_wf.skullstrip_first_dilate" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_op_wf/skullstrip_first_dilate".
+221006-15:55:54,104 nipype.workflow INFO:
+	 [Node] Running "skullstrip_first_dilate" ("nipype.interfaces.fsl.maths.DilateImage"), a CommandLine Interface with command:
+fslmaths -dt char /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_op_wf/skullstrip_first_pass/dir-j-_tstep-000_pe-000_corrected_brain_mask.nii.gz -kernel sphere 6.0000 -dilF /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_op_wf/skullstrip_first_dilate/dir-j-_tstep-000_pe-000_corrected_brain_mask_dil.nii.gz
+221006-15:56:18,728 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_op_wf.skullstrip_first_dilate".
+221006-15:56:20,214 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_op_wf.skullstrip_first_mask" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_op_wf/skullstrip_first_mask".
+221006-15:56:20,229 nipype.workflow INFO:
+	 [Node] Running "skullstrip_first_mask" ("nipype.interfaces.fsl.maths.ApplyMask"), a CommandLine Interface with command:
+fslmaths /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_op_wf/skullstrip_first_pass/dir-j-_tstep-000_pe-000_corrected_brain.nii.gz -mas /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_op_wf/skullstrip_first_dilate/dir-j-_tstep-000_pe-000_corrected_brain_mask_dil.nii.gz /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_op_wf/skullstrip_first_mask/dir-j-_tstep-000_pe-000_corrected_brain_masked.nii.gz
+221006-15:56:20,526 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_op_wf.skullstrip_first_mask".
+221006-15:56:22,202 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_op_wf.unifize" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_op_wf/unifize".
+221006-15:56:22,218 nipype.workflow INFO:
+	 [Node] Running "unifize" ("nipype.interfaces.afni.utils.Unifize"), a CommandLine Interface with command:
+3dUnifize -clfrac 0.2 -rbt 18.3 65.0 90.0 -prefix uni.nii.gz -T2 -input /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_op_wf/unifize/dir-j-_tstep-000_pe-000_corrected_brain_masked.nii.gz
+221006-15:56:29,855 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_op_wf.unifize".
+221006-15:56:32,193 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_op_wf.fixhdr_unifize" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_op_wf/fixhdr_unifize".
+221006-15:56:32,206 nipype.workflow INFO:
+	 [Node] Running "fixhdr_unifize" ("niworkflows.interfaces.utils.CopyXForm")
+221006-15:56:32,360 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_op_wf.fixhdr_unifize".
+221006-15:56:34,159 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_op_wf.skullstrip_second_pass" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_op_wf/skullstrip_second_pass".
+221006-15:56:34,173 nipype.workflow INFO:
+	 [Node] Running "skullstrip_second_pass" ("nipype.interfaces.afni.preprocess.Automask"), a CommandLine Interface with command:
+3dAutomask -apply_prefix uni_xform_masked.nii.gz -dilate 1 -prefix uni_xform_mask.nii.gz /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_op_wf/skullstrip_second_pass/uni_xform.nii.gz
+221006-15:56:35,283 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_op_wf.skullstrip_second_pass".
+221006-15:56:36,115 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_op_wf.fixhdr_skullstrip2" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_op_wf/fixhdr_skullstrip2".
+221006-15:56:36,567 nipype.workflow INFO:
+	 [Node] Running "fixhdr_skullstrip2" ("niworkflows.interfaces.utils.CopyXForm")
+221006-15:56:36,646 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_op_wf.fixhdr_skullstrip2".
+221006-15:56:38,155 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_op_wf.combine_masks" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_op_wf/combine_masks".
+221006-15:56:38,169 nipype.workflow INFO:
+	 [Node] Running "combine_masks" ("nipype.interfaces.fsl.maths.BinaryMaths"), a CommandLine Interface with command:
+fslmaths /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_op_wf/skullstrip_first_pass/dir-j-_tstep-000_pe-000_corrected_brain_mask.nii.gz -mul /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_op_wf/fixhdr_skullstrip2/uni_xform_mask_xform.nii.gz /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_op_wf/combine_masks/dir-j-_tstep-000_pe-000_corrected_brain_mask_maths.nii.gz
+221006-15:56:38,463 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_op_wf.combine_masks".
+221006-15:56:40,227 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_op_wf.apply_mask" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_op_wf/apply_mask".
+221006-15:56:40,242 nipype.workflow INFO:
+	 [Node] Running "apply_mask" ("nipype.interfaces.fsl.maths.ApplyMask"), a CommandLine Interface with command:
+fslmaths /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_op_wf/fixhdr_unifize/uni_xform.nii.gz -mas /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_op_wf/combine_masks/dir-j-_tstep-000_pe-000_corrected_brain_mask_maths.nii.gz /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_op_wf/apply_mask/uni_xform_masked.nii.gz
+221006-15:56:40,590 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_op_wf.apply_mask".
+221006-15:57:08,363 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.initial_boldref_wf.enhance_and_skullstrip_bold_wf.init_aff".
+221006-15:57:10,178 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.initial_boldref_wf.enhance_and_skullstrip_bold_wf.norm" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/initial_boldref_wf/enhance_and_skullstrip_bold_wf/norm".
+221006-15:57:10,196 nipype.workflow INFO:
+	 [Node] Running "norm" ("niworkflows.interfaces.fixes.FixHeaderRegistration"), a CommandLine Interface with command:
+antsRegistration --collapse-output-transforms 1 --dimensionality 3 --float 1 --initial-moving-transform [ /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/initial_boldref_wf/enhance_and_skullstrip_bold_wf/init_aff/initialization.mat, 0 ] --initialize-transforms-per-stage 0 --interpolation Linear --output transform --transform Affine[ 0.1 ] --metric Mattes[ /templateflow/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-02_desc-fMRIPrep_boldref.nii.gz, /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/initial_boldref_wf/gen_ref/ref_sbref.nii.gz, 1, 64, Random, 0.2 ] --convergence [ 200, 1e-09, 10 ] --smoothing-sigmas 2.0mm --shrink-factors 2 --use-estimate-learning-rate-once 1 --use-histogram-matching 1 --winsorize-image-intensities [ 0.05, 0.98 ]  --write-composite-transform 0
+221006-15:57:11,418 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.initial_boldref_wf.enhance_and_skullstrip_bold_wf.norm".
+221006-15:57:12,188 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.initial_boldref_wf.enhance_and_skullstrip_bold_wf.map_brainmask" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/initial_boldref_wf/enhance_and_skullstrip_bold_wf/map_brainmask".
+221006-15:57:12,192 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_02_wf.sdc_estimate_wf.pepolar_unwarp_wf.prepare_epi_wf.ref_ma_wf.init_aff" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_02_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/ref_ma_wf/init_aff".
+221006-15:57:12,206 nipype.workflow INFO:
+	 [Node] Running "map_brainmask" ("niworkflows.interfaces.fixes.FixHeaderApplyTransforms"), a CommandLine Interface with command:
+antsApplyTransforms --default-value 0 --float 1 --input /templateflow/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-01_label-brain_probseg.nii.gz --interpolation BSpline --output tpl-MNI152NLin2009cAsym_res-01_label-brain_probseg_trans.nii.gz --reference-image /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/initial_boldref_wf/gen_ref/ref_sbref.nii.gz --transform [ /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/initial_boldref_wf/enhance_and_skullstrip_bold_wf/norm/transform0GenericAffine.mat, 1 ]
+221006-15:57:12,224 nipype.workflow INFO:
+	 [Node] Running "init_aff" ("nipype.interfaces.ants.utils.AI"), a CommandLine Interface with command:
+antsAI -c [10,1e-06,10] -d 3 -x /templateflow/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-02_desc-brain_mask.nii.gz -m Mattes[/templateflow/tpl-MNI152NLin2009cAsym/tpl-MNI152NLin2009cAsym_res-02_desc-fMRIPrep_boldref.nii.gz,/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_02_wf/sdc_estimate_wf/pepolar_unwarp_wf/prepare_epi_wf/split/dir-j_tstep-001_pe-000.nii.gz,32,Regular,0.2] -o initialization.mat -p 0 -s [20,0.12] -g [40.0,0x40x40] -t Affine[0.1] -v 1
+221006-15:57:15,63 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.initial_boldref_wf.enhance_and_skullstrip_bold_wf.map_brainmask".
+221006-15:57:16,199 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.initial_boldref_wf.enhance_and_skullstrip_bold_wf.binarize_mask" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/initial_boldref_wf/enhance_and_skullstrip_bold_wf/binarize_mask".
+221006-15:57:16,211 nipype.workflow INFO:
+	 [Node] Running "binarize_mask" ("niworkflows.interfaces.nibabel.Binarize")
+221006-15:57:16,403 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.initial_boldref_wf.enhance_and_skullstrip_bold_wf.binarize_mask".
+221006-15:57:18,282 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.initial_boldref_wf.enhance_and_skullstrip_bold_wf.pre_mask_dilate" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/initial_boldref_wf/enhance_and_skullstrip_bold_wf/pre_mask_dilate".
+221006-15:57:18,296 nipype.workflow INFO:
+	 [Node] Running "pre_mask_dilate" ("nipype.interfaces.fsl.maths.DilateImage"), a CommandLine Interface with command:
+fslmaths -dt char /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/initial_boldref_wf/enhance_and_skullstrip_bold_wf/binarize_mask/tpl-MNI152NLin2009cAsym_res-01_label-brain_probseg_trans_mask.nii.gz -kernel sphere 3.0000 -dilF /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/initial_boldref_wf/enhance_and_skullstrip_bold_wf/pre_mask_dilate/tpl-MNI152NLin2009cAsym_res-01_label-brain_probseg_trans_mask_dil.nii.gz
+221006-15:57:22,198 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.initial_boldref_wf.enhance_and_skullstrip_bold_wf.pre_mask_dilate".
+221006-15:57:24,260 nipype.interface WARNING:
+	 q-forms of reference and mask are substantially different
+221006-15:57:26,206 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.initial_boldref_wf.enhance_and_skullstrip_bold_wf.n4_correct" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/initial_boldref_wf/enhance_and_skullstrip_bold_wf/n4_correct".
+221006-15:57:26,349 nipype.workflow INFO:
+	 [Node] Running "n4_correct" ("niworkflows.interfaces.fixes.FixN4BiasFieldCorrection"), a CommandLine Interface with command:
+N4BiasFieldCorrection --bspline-fitting [ 200 ] -d 3 --input-image /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/initial_boldref_wf/gen_ref/ref_sbref.nii.gz --mask-image /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/initial_boldref_wf/enhance_and_skullstrip_bold_wf/check_hdr/tpl-MNI152NLin2009cAsym_res-01_label-brain_probseg_trans_mask_dil_hdr.nii.gz --output ref_sbref_corrected.nii.gz -r
+221006-15:57:39,823 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.initial_boldref_wf.enhance_and_skullstrip_bold_wf.n4_correct".
+221006-15:57:42,181 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.initial_boldref_wf.enhance_and_skullstrip_bold_wf.skullstrip_first_pass" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/initial_boldref_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_pass".
+221006-15:57:42,193 nipype.workflow INFO:
+	 [Node] Running "skullstrip_first_pass" ("nipype.interfaces.fsl.preprocess.BET"), a CommandLine Interface with command:
+bet /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/initial_boldref_wf/enhance_and_skullstrip_bold_wf/n4_correct/ref_sbref_corrected.nii.gz /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/initial_boldref_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_pass/ref_sbref_corrected_brain.nii.gz -f 0.20 -m
+221006-15:57:47,497 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.initial_boldref_wf.enhance_and_skullstrip_bold_wf.skullstrip_first_pass".
+221006-15:57:48,180 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.initial_boldref_wf.enhance_and_skullstrip_bold_wf.skullstrip_first_dilate" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/initial_boldref_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_dilate".
+221006-15:57:48,193 nipype.workflow INFO:
+	 [Node] Running "skullstrip_first_dilate" ("nipype.interfaces.fsl.maths.DilateImage"), a CommandLine Interface with command:
+fslmaths -dt char /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/initial_boldref_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_pass/ref_sbref_corrected_brain_mask.nii.gz -kernel sphere 6.0000 -dilF /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/initial_boldref_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_dilate/ref_sbref_corrected_brain_mask_dil.nii.gz
+221006-15:58:12,823 nipype.workflow INFO:
+	 [Node] Finished "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.initial_boldref_wf.enhance_and_skullstrip_bold_wf.skullstrip_first_dilate".
+221006-15:58:14,212 nipype.workflow INFO:
+	 [Node] Setting-up "fmriprep_wf.single_subject_B07227_wf.func_preproc_ses_01_task_realestate_run_01_wf.initial_boldref_wf.enhance_and_skullstrip_bold_wf.skullstrip_first_mask" in "/work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/initial_boldref_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_mask".
+221006-15:58:14,230 nipype.workflow INFO:
+	 [Node] Running "skullstrip_first_mask" ("nipype.interfaces.fsl.maths.ApplyMask"), a CommandLine Interface with command:
+fslmaths /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/initial_boldref_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_pass/ref_sbref_corrected_brain.nii.gz -mas /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/initial_boldref_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_dilate/ref_sbref_corrected_brain_mask_dil.nii.gz /work/fmriprep_wf/single_subject_B07227_wf/func_preproc_ses_01_task_realestate_run_01_wf/initial_boldref_wf/enhance_and_skullstrip_bold_wf/skullstrip_first_mask/ref_sbref_corrected_brain_masked.nii.gz
