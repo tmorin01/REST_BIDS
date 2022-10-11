@@ -34,7 +34,6 @@
          "modalityLabel": "epi",
          "customLabels": "dir-AP",
          "IntendedFor": [
-            2,
             6
          ],
          "criteria": {
@@ -46,7 +45,6 @@
          "modalityLabel": "epi",
          "customLabels": "dir-PA",
          "IntendedFor": [
-            2,
             6
          ],
          "criteria": {
@@ -168,8 +166,7 @@
          "modalityLabel": "epi",
          "customLabels": "dir-AP",
          "IntendedFor": [
-            18,
-            20
+            18
          ],
          "criteria": {
             "SidecarFilename": "027*"
@@ -180,8 +177,7 @@
          "modalityLabel": "epi",
          "customLabels": "dir-PA",
          "IntendedFor": [
-            18,
-            20
+            18
          ],
          "criteria": {
             "SidecarFilename": "028*"
@@ -229,6 +225,41 @@
          },
          "sidecarChanges": {
             "TaskName": "rest"
+         }
+      },
+      {
+         "dataType": "fmap",
+         "modalityLabel": "magnitude1",
+         "IntendedFor": [
+            2,
+            20
+         ],
+         "criteria": {
+            "SidecarFilename": "007*",
+            "EchoNumber": 1
+         }
+      },
+      {
+         "dataType": "fmap",
+         "modalityLabel": "magnitude2",
+         "IntendedFor": [
+            2,
+            20
+         ],
+         "criteria": {
+            "SidecarFilename": "007*",
+            "EchoNumber": 2
+         }
+      },
+      {
+         "dataType": "fmap",
+         "modalityLabel": "phasediff",
+         "IntendedFor": [
+            2,
+            20
+         ],
+         "criteria": {
+            "SidecarFilename": "008*"
          }
       }
    ]

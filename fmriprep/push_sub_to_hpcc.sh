@@ -9,7 +9,7 @@
 #   USAGE: sh push_sub_to_hpcc.sh SUBJECT_NAME
 
 SUB=$1
-ssh_key=/Users/tommorin/.ssh/brandeis_hpcc_id
+ssh_key=$HOME/.ssh/brandeis_hpcc_id
 remote_dir=tommorin@hpcc.brandeis.edu:/work/tommorin/REST_BIDS/
 
 scp -i $ssh_key ../../dataset_description.json $remote_dir
