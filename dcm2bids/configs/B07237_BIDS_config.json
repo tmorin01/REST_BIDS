@@ -210,7 +210,7 @@
          "modalityLabel": "sbref",
          "customLabels": "task-rest_run-02",
          "criteria": {
-            "SidecarFilename": "035*"
+            "SidecarFilename": "034*"
          },
          "sidecarChanges": {
             "TaskName": "rest"

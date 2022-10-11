@@ -1,0 +1,83 @@
+{
+   "descriptions": [
+      {
+         "dataType": "func",
+         "modalityLabel": "sbref",
+         "customLabels": "task-rest_run-01",
+         "criteria": {
+            "SidecarFilename": "004*"
+         },
+         "sidecarChanges": {
+            "TaskName": "rest"
+         }
+      },
+      {
+         "dataType": "func",
+         "modalityLabel": "bold",
+         "customLabels": "task-rest_run-01",
+         "criteria": {
+            "SidecarFilename": "006*"
+         },
+         "sidecarChanges": {
+            "TaskName": "rest"
+         }
+      },
+      {
+         "dataType": "func",
+         "modalityLabel": "sbref",
+         "customLabels": "task-rest_run-02",
+         "criteria": {
+            "SidecarFilename": "034*"
+         },
+         "sidecarChanges": {
+            "TaskName": "rest"
+         }
+      },
+      {
+         "dataType": "func",
+         "modalityLabel": "bold",
+         "customLabels": "task-rest_run-02",
+         "criteria": {
+            "SidecarFilename": "036*"
+         },
+         "sidecarChanges": {
+            "TaskName": "rest"
+         }
+      },
+      {
+         "dataType": "fmap",
+         "modalityLabel": "magnitude1",
+         "IntendedFor": [
+            1,
+            3
+         ],
+         "criteria": {
+            "SidecarFilename": "007*",
+            "EchoNumber": 1
+         }
+      },
+      {
+         "dataType": "fmap",
+         "modalityLabel": "magnitude2",
+         "IntendedFor": [
+            1,
+            3
+         ],
+         "criteria": {
+            "SidecarFilename": "007*",
+            "EchoNumber": 2
+         }
+      },
+      {
+         "dataType": "fmap",
+         "modalityLabel": "phasediff",
+         "IntendedFor": [
+            1,
+            3
+         ],
+         "criteria": {
+            "SidecarFilename": "008*"
+         }
+      }
+   ]
+}
