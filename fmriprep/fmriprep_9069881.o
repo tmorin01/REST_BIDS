@@ -1,0 +1,89 @@
+B07237
+Running fmriprep...
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-trh_y96_ because the default path (/home/fmriprep/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+221012-14:36:31,22 cli INFO:
+	 Telemetry system to collect crashes and errors is enabled - thanks for your feedback!. Use option ``--notrack`` to opt out.
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+221012-14:37:02,624 nipype.workflow IMPORTANT:
+	 Running fMRIPrep version 22.0.2
+
+         License NOTICE ##################################################
+         fMRIPrep 22.0.2
+         Copyright 2022 The NiPreps Developers.
+         
+         This product includes software developed by
+         the NiPreps Community (https://nipreps.org/).
+         
+         Portions of this software were developed at the Department of
+         Psychology at Stanford University, Stanford, CA, US.
+         
+         This software redistributes the versioneer Python package, which is
+         Public domain source code.
+         
+         This software is also distributed as a Docker container image.
+         The bootstraping file for the image ("Dockerfile") is licensed
+         under the MIT License.
+         
+         This software may be distributed through an add-on package called
+         "Docker Wrapper" that is under the BSD 3-clause License.
+         #################################################################
+221012-14:37:03,33 nipype.workflow IMPORTANT:
+	 Building fMRIPrep's workflow:
+           * BIDS dataset path: /data.
+           * Participant list: ['B07237'].
+           * Run identifier: 20221012-143625_d9a9a778-3b88-4649-9cd9-ceda4becade8.
+           * Output spaces: MNI152NLin2009cAsym:res-2 fsaverage:den-164k.
+           * Pre-run FreeSurfer's SUBJECTS_DIR: /data/derivatives/sourcedata/freesurfer.
+221012-14:37:07,262 nipype.workflow INFO:
+	 B0 field inhomogeneity map will be estimated with  the following 2 estimators: [<EstimatorType.PHASEDIFF: 3>, <EstimatorType.PEPOLAR: 2>].
+221012-14:37:07,608 nipype.workflow INFO:
+	 Using single-band reference file(s) sub-B07237_ses-01_task-realestate_run-01_sbref.nii.gz.
+221012-14:37:07,608 nipype.workflow INFO:
+	 Found usable B0-map (fieldmap) estimator(s) <auto_00001> to correct </data/sub-B07237/ses-01/func/sub-B07237_ses-01_task-realestate_run-01_bold.nii.gz> for susceptibility-derived distortions.
+221012-14:37:07,835 nipype.workflow IMPORTANT:
+	 BOLD series will be slice-timing corrected to an offset of 1.15s.
+221012-14:37:08,597 nipype.workflow INFO:
+	 Using single-band reference file(s) sub-B07237_ses-01_task-realestate_run-02_sbref.nii.gz.
+221012-14:37:08,597 nipype.workflow INFO:
+	 Found usable B0-map (fieldmap) estimator(s) <auto_00001> to correct </data/sub-B07237/ses-01/func/sub-B07237_ses-01_task-realestate_run-02_bold.nii.gz> for susceptibility-derived distortions.
+221012-14:37:08,769 nipype.workflow IMPORTANT:
+	 BOLD series will be slice-timing corrected to an offset of 1.15s.
+221012-14:37:09,171 nipype.workflow INFO:
+	 Using single-band reference file(s) sub-B07237_ses-01_task-realestate_run-03_sbref.nii.gz.
+221012-14:37:09,172 nipype.workflow INFO:
+	 Found usable B0-map (fieldmap) estimator(s) <auto_00001> to correct </data/sub-B07237/ses-01/func/sub-B07237_ses-01_task-realestate_run-03_bold.nii.gz> for susceptibility-derived distortions.
+221012-14:37:09,362 nipype.workflow IMPORTANT:
+	 BOLD series will be slice-timing corrected to an offset of 1.15s.
+221012-14:37:09,925 nipype.workflow INFO:
+	 Using single-band reference file(s) sub-B07237_ses-01_task-realestate_run-04_sbref.nii.gz.
+221012-14:37:09,925 nipype.workflow INFO:
+	 Found usable B0-map (fieldmap) estimator(s) <auto_00001> to correct </data/sub-B07237/ses-01/func/sub-B07237_ses-01_task-realestate_run-04_bold.nii.gz> for susceptibility-derived distortions.
+221012-14:37:10,86 nipype.workflow IMPORTANT:
+	 BOLD series will be slice-timing corrected to an offset of 1.15s.
+221012-14:37:10,472 nipype.workflow INFO:
+	 Using single-band reference file(s) sub-B07237_ses-01_task-rest_run-01_sbref.nii.gz.
+221012-14:37:10,473 nipype.workflow INFO:
+	 Found usable B0-map (fieldmap) estimator(s) <auto_00000> to correct </data/sub-B07237/ses-01/func/sub-B07237_ses-01_task-rest_run-01_bold.nii.gz> for susceptibility-derived distortions.
+221012-14:37:10,652 nipype.workflow IMPORTANT:
+	 BOLD series will be slice-timing corrected to an offset of 0.5s.
+221012-14:37:11,64 nipype.workflow INFO:
+	 Using single-band reference file(s) sub-B07237_ses-01_task-rest_run-02_sbref.nii.gz.
+221012-14:37:11,64 nipype.workflow INFO:
+	 Found usable B0-map (fieldmap) estimator(s) <auto_00000> to correct </data/sub-B07237/ses-01/func/sub-B07237_ses-01_task-rest_run-02_bold.nii.gz> for susceptibility-derived distortions.
+221012-14:37:11,238 nipype.workflow IMPORTANT:
+	 BOLD series will be slice-timing corrected to an offset of 0.5s.
+221012-14:37:12,307 nipype.workflow INFO:
+	 Setting-up fieldmap "auto_00000" (EstimatorType.PHASEDIFF) with <sub-B07237_ses-01_phasediff.nii.gz, sub-B07237_ses-01_magnitude1.nii.gz, sub-B07237_ses-01_magnitude2.nii.gz>
+221012-14:37:12,307 nipype.workflow INFO:
+	 Setting-up fieldmap "auto_00001" (EstimatorType.PEPOLAR) with <sub-B07237_ses-01_dir-AP_run-01_epi.nii.gz, sub-B07237_ses-01_dir-AP_run-02_epi.nii.gz, sub-B07237_ses-01_dir-AP_run-03_epi.nii.gz, sub-B07237_ses-01_dir-AP_run-04_epi.nii.gz, sub-B07237_ses-01_dir-PA_run-01_epi.nii.gz, sub-B07237_ses-01_dir-PA_run-02_epi.nii.gz, sub-B07237_ses-01_dir-PA_run-03_epi.nii.gz, sub-B07237_ses-01_dir-PA_run-04_epi.nii.gz>
+221012-14:37:24,655 nipype.workflow INFO:
+	 fMRIPrep workflow graph with 1643 nodes built successfully.
+slurmstepd: error: *** JOB 9069881 ON compute-6-1 CANCELLED AT 2022-10-12T14:37:51 ***

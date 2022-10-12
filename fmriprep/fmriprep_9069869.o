@@ -1,0 +1,7 @@
+sleep: invalid time interval ‘m’
+Try 'sleep --help' for more information.
+Running fmriprep...
+Matplotlib created a temporary config/cache directory at /tmp/matplotlib-4cecv_yg because the default path (/home/fmriprep/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+221012-11:41:52,320 cli INFO:
+	 Telemetry system to collect crashes and errors is enabled - thanks for your feedback!. Use option ``--notrack`` to opt out.
+slurmstepd: error: *** JOB 9069869 ON compute-6-1 CANCELLED AT 2022-10-12T11:41:53 ***
