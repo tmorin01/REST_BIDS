@@ -1,0 +1,3 @@
+Subject: B07277
+Running fmriprep...
+/.singularity.d/actions/exec: 9: exec: /data: Permission denied
